@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+@import "globals/colors";
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+@import "globals/breakpoints";
+@import "globals/fonts";
+@import "globals/buttons";
+@import "globals/competences";
+@import "globals/errors";
+@import "globals/forms";
+@import "globals/icons";
+@import "globals/pages";
+@import "globals/panels";
+@import "globals/pix-loader";
+@import "globals/tables";
+@import "globals/texts";
+@import "globals/titles";
+@import "globals/tooltip";
+@import "components/login-form";
+@import "components/campaign-list";
+@import "components/circle-chart";
+@import "components/current-organization";
+@import "components/dissociate-user-modal";
+@import "components/edit-student-number-modal";
+@import "components/dropdown";
+@import "components/join-request-form";
+@import "components/pagination-control";
+@import "components/previous-page-button";
+@import "components/pix-score-tag";
+@import "components/progress-bar";
+@import "components/progression-gauge";
+@import "components/recommendation-indicator";
+@import "components/register-form";
+@import "components/search-input";
+@import "components/select-input";
+@import "components/sidebar-menu";
+@import "components/stage-stars";
+@import "components/login-or-register";
+@import "components/user-logged-menu";
+@import "components/manage-authentication-method-modal";
+@import "components/modal";
+@import "components/organization-credit-info";
+@import "pages/login";
+@import "pages/join";
+@import "pages/join-request";
+@import "pages/authenticated";
+@import "pages/authenticated/campaigns";
+@import "pages/authenticated/campaigns/details";
+@import "pages/authenticated/campaigns/new";
+@import "pages/authenticated/campaigns/new-item";
+@import "pages/authenticated/campaigns/list";
+@import "pages/authenticated/campaigns/no-campaign-panel";
+@import "pages/authenticated/campaigns/details/analysis";
+@import "pages/authenticated/campaigns/details/analysis/analysis-tab";
+@import "pages/authenticated/campaigns/details/analysis/tube-recommendation-row";
+@import "pages/authenticated/campaigns/details/parameters";
+@import "pages/authenticated/campaigns/details/collective-results/success-indicator";
+@import "pages/authenticated/campaigns/details/participants";
+@import "pages/authenticated/campaigns/details/participants/participant";
+@import "pages/authenticated/campaigns/details/participants/participant/header";
+@import "pages/authenticated/campaigns/details/participants/participant/results";
+@import "pages/authenticated/campaigns/profile";
+@import "pages/authenticated/team";
+@import "pages/authenticated/team/list";
+@import "pages/authenticated/team/new";
+@import "pages/authenticated/terms-of-service";
+@import "pages/authenticated/students";
+@import "pages/authenticated/students/list";
+
+
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: $roboto;
+  font-size: 100%;
+  background-color: $grey-10;
+  color: $black;
+}
+
+body > .ember-view {
+  height: 100%;
+}
+
+input:invalid {
+  box-shadow: none;
+}

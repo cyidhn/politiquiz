@@ -1,0 +1,23 @@
+.profile {
+
+  &__panel {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  @include device-is('tablet') {
+
+    &__panel {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+.profile-panel-header-information {
+  font-weight: $font-light;
+  font-family: $font-roboto;
+  color: $grey-200;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+}

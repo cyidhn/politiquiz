@@ -1,0 +1,178 @@
+.panel {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 1px 1px 0 rgba($black, 0.1), 0 2px 5px 0 rgba($black, 0.1);
+  background-color: $white;
+
+  &--strong-shadow {
+    box-shadow: 0 6px 12px 0 rgba($black, 0.1), 0 2px 5px 0 rgba($black, 0.1);
+  }
+
+  &--link {
+    text-decoration: none;
+    border: solid 2px $white;
+    color: $grey-100;
+    outline: none;
+    cursor: pointer;
+
+    &:hover, &:active, &:focus {
+      border-color: $blue;
+      transition: border-color 1s ease;
+      box-shadow: 0 2px 5px 0 rgba($black, 0.05);
+    }
+  }
+
+  &--header {
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+}
+
+.panel-header__headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid $grey-20;
+  padding-bottom: 24px;
+
+  .panel-header-title {
+    margin: 0;
+  }
+}
+
+.panel-header__body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 16px;
+}
+
+.panel-header__data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 0;
+  margin: 0;
+  font-family: $roboto;
+
+  &--highlight {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: $grey-10;
+    border-radius: 8px;
+    padding: 0 28px;
+  }
+}
+
+.panel-header-data {
+  &__content {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1px 28px 1px 24px;
+    border-right: 1px solid $grey-20;
+
+    &--horizontal {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__content:first-child {
+    padding-left: 0;
+  }
+
+  &__content:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+.panel-header-data-content {
+  &__label {
+    margin-bottom: 8px;
+  }
+
+  &__progress-bar {
+    margin-top: 14px;
+    margin-right: 20px;
+  }
+}
+
+.navbar {
+  height: 60px;
+  border: none;
+  padding: 0 10px;
+
+  &-item {
+    width: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    color: $grey-30;
+    font-family: $roboto;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all ease-in-out .2s;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &-item.active {
+      border-bottom: 2px solid $blue;
+      color: $blue;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &-text {
+    visibility: hidden;
+    width: 140px;
+    background-color: $grey-100;
+    color: $white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $grey-100 transparent transparent transparent;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.signup-form {
+
+  &__cgu-container {
+    max-width: 449px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include device-is('tablet') {
+      margin-top: 15px;
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+
+  &__cgu {
+    font-size: 1rem;
+    font-weight: $font-medium;
+  }
+
+  &__cgu-label {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  &__cgu-label input[type=checkbox] {
+    margin: 3px 15px 3px 0;
+  }
+
+  &__cgu-label span {
+    color: $grey-80;
+    font-size: 0.813rem;
+
+    @include device-is('tablet') {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__legal-details-container {
+    display: block;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 0.75rem;
+
+    @include device-is('tablet') {
+      padding: 10px 0;
+    }
+  }
+
+  &__captcha-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+}

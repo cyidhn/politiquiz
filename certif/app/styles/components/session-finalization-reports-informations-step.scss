@@ -1,0 +1,38 @@
+.session-finalization-reports-informations-step {
+  font-size: 0.8125rem;
+
+  table {
+    table-layout: initial;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__textarea {
+    box-shadow: none;
+    font-family: $roboto;
+    font-size: 0.8125rem;
+    color: $grey-80;
+    width: 100%;
+    height: 50px;
+    padding: 4px;
+    max-height: 52px;
+    resize: none;
+    border: 1px solid $grey-20;
+    border-radius: 4px;
+  }
+
+  &__checker {
+    margin-right: 16px;
+  }
+
+  .finalization-report-examiner-comment {
+    display: flex;
+
+    .add-button {
+      font-size: 13px;
+    }
+  }
+}

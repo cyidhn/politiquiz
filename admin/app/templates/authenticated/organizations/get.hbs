@@ -1,0 +1,34 @@
+<header class="page-header">
+  <div class="page-title">
+    <LinkTo @route="authenticated.organizations.list">Toutes les organisations</LinkTo>
+    <span class="wire">&nbsp;>&nbsp;</span>
+    {{@model.name}}
+  </div>
+  <div class="page-actions">
+    <button type="button" class="btn btn-outline-default btn-thin hidden">
+      <FaIcon @icon="edit" /> Modifier
+    </button>
+    <button type="button" class="btn btn-outline-default btn-thin hidden">
+      <FaIcon @icon="trash" /> Supprimer
+    </button>
+  </div>
+</header>
+
+<main class="page-body" id="organizations-get-page">
+
+  <OrganizationInformationSection @organization={{@model}}
+                                  @onLogoUpdated={{this.updateOrganizationInformation}}
+                                  @onSubmit={{this.updateOrganizationInformation}} />
+
+  <nav class="navbar">
+    <LinkTo @route="authenticated.organizations.get.members" @model={{@model}} class="navbar-item">
+      Membres
+    </LinkTo>
+
+    <LinkTo @route="authenticated.organizations.get.target-profiles" @model={{@model}} class="navbar-item">
+      Profils cibles
+    </LinkTo>
+  </nav>
+
+  {{outlet}}
+</main>

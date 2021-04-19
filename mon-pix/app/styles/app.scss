@@ -1,0 +1,153 @@
+@charset 'utf-8';
+
+/* 3rd-party */
+@import 'ember-burger-menu/variables';
+@import 'ember-burger-menu/structure';
+@import 'ember-burger-menu/animations/push';
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+/* globals */
+@import 'globals/a11y';
+@import 'globals/colors';
+@import 'globals/fonts';
+@import 'globals/breakpoints';
+@import 'globals/alert';
+@import 'globals/dimension';
+@import 'globals/inputs';
+@import 'globals/loading';
+@import 'globals/redesign-inputs';
+@import 'globals/pix-modal';
+@import 'globals/buttons';
+@import 'globals/tables';
+@import 'globals/text';
+@import 'globals/titles';
+@import 'globals/layout';
+/* components */
+@import 'components/assessment-banner';
+@import 'components/background-banner';
+@import 'components/badge-acquired-card';
+@import 'components/campaign-participation/card';
+@import 'components/campaign-participation/grid';
+@import 'components/certification-starter';
+@import 'components/certification-joiner';
+@import 'components/certification-banner';
+@import 'components/certification-not-certifiable';
+@import 'components/certification-result';
+@import 'components/certifications-list';
+@import 'components/certifications-list-item';
+@import 'components/congratulations-certification-banner';
+@import 'components/challenge-actions';
+@import 'components/challenge-illustration';
+@import 'components/challenge-item';
+@import 'components/challenge-response';
+@import 'components/challenge-statement';
+@import 'components/checkpoint';
+@import 'components/circle-chart';
+@import 'components/comparison-window';
+@import 'components/competence-card';
+@import 'components/competence-card-desktop';
+@import 'components/dashboard/content';
+@import 'components/feedback-panel';
+@import 'components/footer';
+@import 'components/form-textfield';
+@import 'components/hexagon-score';
+@import 'components/learning-more-tutorial-panel';
+@import 'components/levelup-notif';
+@import 'components/login-form';
+@import 'components/login-or-register';
+@import 'components/navbar-burger-menu';
+@import 'components/navbar-desktop-menu';
+@import 'components/navbar-desktop-header';
+@import 'components/navbar-header';
+@import 'components/navbar-mobile-header';
+@import 'components/no-certification-panel';
+@import 'components/new-information';
+@import 'components/panel';
+@import 'components/password-reset-demand-form';
+@import 'components/pix-logo';
+@import 'components/progress-bar';
+@import 'components/progression-gauge';
+@import 'components/qcm-solution-panel';
+@import 'components/qcu-solution-panel';
+@import 'components/qroc-solution-panel';
+@import 'components/qroc-solution-panel';
+@import 'components/qrocm-solution-panel';
+@import 'components/reached-stage';
+@import 'components/register-form';
+@import 'components/reset-password-form';
+@import 'components/resume-campaign-banner';
+@import 'components/result-item';
+@import 'components/rounded-panel';
+@import 'components/scorecard-details';
+@import 'components/signup-form';
+@import 'components/timeout-jauge';
+@import 'components/tutorial-item';
+@import 'components/tutorial-panel';
+@import 'components/user-account';
+@import 'components/user-account-panel';
+@import 'components/user-certifications-detail-competences-list';
+@import 'components/user-certifications-detail-competence';
+@import 'components/user-certifications-detail-header';
+@import 'components/user-certification-hexagon-score';
+@import 'components/user-certifications-detail-result';
+@import 'components/user-certifications-detail-banner';
+@import 'components/user-logged-menu';
+@import 'components/communication-banner';
+@import 'components/warning-timing-page';
+@import 'components/pix-toggle';
+
+/* pages */
+@import 'pages/assessment-challenge';
+@import 'pages/assessment-results';
+@import 'pages/campaign-landing-page';
+@import 'pages/campaign-tutorial';
+@import 'pages/competence-results';
+@import 'pages/course-preview';
+@import 'pages/error';
+@import 'pages/fill-in-campaign-code';
+@import 'pages/fill-in-certificate-verification-code';
+@import 'pages/fill-in-participant-external-id';
+@import 'pages/join-restricted-campaign';
+@import 'pages/login-or-register-to-access-restricted-campaign';
+@import 'pages/not-connected';
+@import 'pages/profile';
+@import 'pages/send-profile';
+@import 'pages/sign-form';
+@import 'pages/skill-review';
+@import 'pages/terms-of-service';
+@import 'pages/update-expired-password-form';
+@import 'pages/user-certifications';
+@import 'pages/user-certifications-get';
+@import 'pages/user-tutorials';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-roboto;
+  background-color: $grey-10;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type='radio'] {
+  margin: 0 5px 0 0;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+input {
+  font-size: 0.875rem;
+  font-family: $font-roboto;
+}
+
+a {
+  text-decoration: none;
+}
+

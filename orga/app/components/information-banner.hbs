@@ -1,0 +1,32 @@
+{{#if this.displayNewYearSchoolingRegistrationsImportBanner}}
+  <PixBanner>
+    <FaIcon @icon="exclamation-triangle" class="warning-icon" />
+    Rentrée 2020 : l’<strong>administrateur</strong> doit
+    <LinkTo @route="authenticated.sco-students" class="link link-dark">
+      importer ou ré-importer la base élèves
+    </LinkTo>
+    pour initialiser Pix Orga. Plus d’info
+    <a href="https://view.genial.ly/5f295b80302a810d2ff9fa60/?idSlide=cd748a12-ef8e-4683-8139-eb851bd0eb23" class="link link-dark" target="_blank" rel="noopener noreferrer">
+      collège
+      <FaIcon @icon="external-link-alt" />
+    </a>
+    et
+    <a href="https://view.genial.ly/5f46390591252c0d5246bb63/?idSlide=cd748a12-ef8e-4683-8139-eb851bd0eb23" class="link link-dark" target="_blank" rel="noopener noreferrer">
+      lycée (GT et Pro)
+      <FaIcon @icon="external-link-alt" />
+    </a>
+  </PixBanner>
+{{else if this.displayNewYearCampaignsBanner}}
+  <PixBanner>
+    <strong>Parcours de rentrée 2020</strong> : les codes sont disponibles dans l’onglet Campagnes. N’oubliez pas de les diffuser aux élèves avant les vacances de Noël. Plus d’info
+    <a href="https://view.genial.ly/5f295b80302a810d2ff9fa60/?idSlide=e11f61b2-3047-4be3-9a4d-dd9e7cc698ba" class="link link-dark" target="_blank" rel="noopener noreferrer">
+      collège
+      <FaIcon @icon="external-link-alt" />
+    </a>
+    et
+    <a href="https://view.genial.ly/5f46390591252c0d5246bb63/?idSlide=e11f61b2-3047-4be3-9a4d-dd9e7cc698ba" class="link link-dark" target="_blank" rel="noopener noreferrer">
+      lycée (GT et Pro)
+      <FaIcon @icon="external-link-alt" />
+    </a>
+  </PixBanner>
+{{/if}}

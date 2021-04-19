@@ -1,0 +1,138 @@
+.app {
+  display: flex;
+  min-height: 100%;
+  min-height: 100vh;
+
+  &__sidebar {
+    width: 280px;
+    min-width: 100px;
+  }
+
+  &__main-content {
+    width: 100%;
+  }
+
+  .sco-temporary-banner {
+    background-color: $pix-certif-banner;
+
+    .pix-banner__content {
+      min-width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .sco-temporary-banner__informations-text {
+        display: flex;
+        align-items: center;
+        line-height: 22px;
+
+        .sco-temporary-banner-informations-text__triangle-icon {
+          font-size: 1.25rem;
+          margin-right: 16px;
+        }
+
+        p {
+          margin: 0;
+
+          a {
+            font-weight: bold;
+            color: $white;
+          }
+        }
+      }
+
+      .sco-temporary-banner-button {
+        background: none;
+        border: none;
+        width: 20px;
+        height: 20px;
+
+        &__times-icon {
+          font-size: 1.25rem;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.sidebar {
+  min-height: inherit;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+
+  &__logo {
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+
+  &__logo-image {
+    height: 60px;
+  }
+
+  &__documentation {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.sidebar-documentation {
+
+  &__icon {
+    margin-right: 8px;
+  }
+
+  &__bar {
+    width: 157px;
+    border: 1px solid $grey-45;
+    opacity: 0.25;
+    margin: 0 auto;
+    transition: 0.5s;
+  }
+
+  &__button {
+    height: 44px;
+    color: $grey-45;
+    font-family: $roboto;
+    font-size: 0.875rem;
+    line-height: 2.75rem;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      background-color: $grey-20;
+
+      .sidebar-documentation__bar {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+
+  &__topbar {
+    background-color: $white;
+    min-height: 60px;
+  }
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__user-logged-menu {
+    padding: 0 30px;
+    border-left: 1px solid $grey-20;
+  }
+}

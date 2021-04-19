@@ -1,0 +1,22 @@
+{{!-- template-lint-disable no-implicit-this  --}}
+{{page-title (t 'pages.certification-start.title')}}
+<BurgerMenu @animation="push" @translucentOverlay={{true}} as |burger|>
+  <burger.outlet>
+
+    <NavbarHeader @burger={{burger}} />
+    <PixBackgroundHeader>
+
+      {{#if model.isCertifiable}}
+        <PixBlock @shadow="heavy" class="certification-start-page__block">
+          <Stepper @steps={{array "certification-stepper-join" "certification-stepper-start"}}/>
+        </PixBlock>
+      {{else}}
+        <CertificationNotCertifiable />
+      {{/if}}
+
+    </PixBackgroundHeader>
+
+    <Footer />
+
+  </burger.outlet>
+</BurgerMenu>

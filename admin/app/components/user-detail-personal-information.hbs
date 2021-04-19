@@ -1,0 +1,196 @@
+<section class="page-section mb_10">
+  {{#if this.isEditionMode}}
+    <form class="form user-edit-form" {{on "submit" this.updateUserDetails}}>
+      <span class="form__instructions col-md-4">
+        Les champs marqués de <abbr title="obligatoire" class="mandatory-mark" aria-hidden="true">*</abbr> sont obligatoires.
+      </span>
+      <div class="form-field col-md-4">
+        <label for="firstName" class="form-field__label">
+          <abbr title="obligatoire" class="mandatory-mark" aria-hidden="true">*</abbr> Prénom :
+        </label>
+        {{#if (v-get this.form 'firstName' 'isInvalid')}}
+          <div class="form-field__error" aria-label="Message d'erreur du champ prénom">
+            {{v-get this.form 'firstName' 'message'}}
+          </div>
+        {{/if}}
+        <Input id="firstName"
+               @type="text"
+               class={{if (v-get this.form 'firstName' 'isInvalid') "user-edit-form__first-name form-control is-invalid"
+                          "user-edit-form__first-name form-control"}}
+               @value={{this.form.firstName}} />
+      </div>
+      <div class="form-field col-md-4">
+        <label for="lastName" class="form-field__label">
+          <abbr title="obligatoire" class="mandatory-mark" aria-hidden="true">*</abbr> Nom :
+        </label>
+        {{#if (v-get this.form 'lastName' 'isInvalid')}}
+          <div class="form-field__error" aria-label="Message d'erreur du champ nom">
+            {{v-get this.form 'lastName' 'message'}}
+          </div>
+        {{/if}}
+        <Input id="lastName"
+               @type="text"
+               class={{if (v-get this.form 'lastName' 'isInvalid') "user-edit-form__last-name form-control is-invalid"
+                          "user-edit-form__last-name form-control"}}
+               @value={{this.form.lastName}} />
+      </div>
+      <div class="form-field col-md-4">
+        <label for="email" class="form-field__label">
+          <abbr title="obligatoire" class="mandatory-mark" aria-hidden="true">*</abbr> E-mail :
+        </label>
+        {{#if (v-get this.form 'email' 'isInvalid')}}
+          <div class="form-field__error" aria-label="Message d'erreur du champ email">
+            {{v-get this.form 'email' 'message'}}
+          </div>
+        {{/if}}
+        <Input id="email"
+               @type="email"
+               class={{if (v-get this.form 'email' 'isInvalid') "user-edit-form__email form-control is-invalid"
+                          "user-edit-form__email form-control"}}
+               @value={{this.form.email}} />
+      </div>
+
+      <div class="col-md-4">
+        <button type="button" class="btn btn-outline-default" aria-label="Annuler" {{on "click" this.cancelEdit}}>Annuler</button>
+        <button type="submit" class="btn btn-success" aria-label="Editer">Editer</button>
+      </div>
+    </form>
+  {{else}}
+    <form class="form user-read-only-form">
+      <section class="page-section mb_10">
+        <div class="user-detail-personal-information-section__content">
+          <div class="user-detail-personal-information-section__item">
+            <div class="attribute first-name">
+              <span class="attibute__label">Prénom : </span>
+              <span class="attribute__value user__first-name">{{@user.firstName}}</span>
+            </div>
+            <div class="attribute last-name">
+              <span class="attibute__label">Nom : </span>
+              <span class="attribute__value user__last-name">{{@user.lastName}}</span>
+            </div>
+            <div class="attribute email">
+              <span class="attibute__label">E-mail : </span>
+              <span class="attribute__value user__email">{{@user.email}}</span>
+            </div>
+            <div class="attribute username">
+              <span class="attibute__label">Identifiant : </span>
+              <span class="attribute__value user__username">{{@user.username}}</span>
+            </div>
+            <div class="attribute authenticated-from-gar">
+              <span class="attibute__label">Connecté via le GAR : </span>
+              <span class="attribute__value user__is-authenticated-from-gar">
+                {{if @user.isAuthenticatedFromGAR 'OUI''NON'}}
+              </span>
+            </div>
+            <br>
+            <div class="attribute cgu">
+              <span class="attibute__label">CGU Pix App validé : </span>
+              <span class="attribute__value user__cgu">{{if @user.cgu 'OUI' 'NON'}}</span>
+            </div>
+            <div class="attribute pix-orga-terms-of-service-accepted">
+              <span class="attibute__label">CGU Pix Orga validé : </span>
+              <span class="attribute__value user__pix-orga-terms-of-service-accepted">{{if
+                      @user.pixOrgaTermsOfServiceAccepted 'OUI' 'NON'}}
+              </span>
+            </div>
+            <div class="attribute pix-certif-terms-of-service-accepted">
+              <span class="attibute__label">CGU Pix Certif validé : </span>
+              <span class="attribute__value user__pix-certif-terms-of-service-accepted">{{if
+                      @user.pixCertifTermsOfServiceAccepted 'OUI' 'NON'}}
+              </span>
+            </div>
+          </div>
+          <div class="user-detail-personal-information-section__item">
+            <a class="btn btn-outline-default" aria-label="Tableau de bord" href="{{this.externalURL}}" target="_blank" rel="noopener noreferrer">Tableau de bord</a>
+          </div>
+        </div>
+      </section>
+      <div class="col-md-4">
+        {{#if this.canAdministratorModifyUserDetails}}
+          <button
+            type="button"
+            class="btn btn-outline-default"
+            aria-label="Modifier"
+            {{on "click" this.changeEditionMode}}
+          >
+            Modifier
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger"
+            aria-label="Anonymiser"
+            {{on "click" this.toggleDisplayConfirm}}
+          >
+            Anonymiser cet utilisateur
+          </button>
+        {{/if}}
+      </div>
+    </form>
+  {{/if}}
+</section>
+
+<section class="page-section mb_10">
+  <header class="page-section__header">
+    <h2 class="page-section__title">Informations élèves SCO</h2>
+  </header>
+  {{#if @user.schoolingRegistrations}}
+  <div class="schooling-registrations-buttons">
+    {{#if this.isLoading}}
+      <button type="button" disabled class="btn btn-danger">
+        <span class="loader-in-button">&nbsp;</span>
+      </button>
+    {{else}}
+      <button
+              type="button"
+              class="btn btn-danger"
+              data-test-dissociate
+        {{on "click" this.dissociate}}
+      >
+        Dissocier
+      </button>
+    {{/if}}
+  </div>
+  {{/if}}
+
+  <div class="schooling-registrations-table content-text content-text--small">
+    <table class="table-admin">
+      <thead>
+      <tr>
+        <th>Prénom</th>
+        <th>Nom</th>
+        <th>DDN</th>
+        <th class="table__column--small">Classe</th>
+        <th class="table__column--small">Orga ID</th>
+        <th>UAI</th>
+        <th class="table__column--wide">Nom de l'orga</th>
+        <th>Date d'import</th>
+        <th>Dernière MAJ</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each @user.schoolingRegistrations as |schoolingRegistration|}}
+        <tr aria-label="Inscription">
+          <td>{{schoolingRegistration.firstName}}</td>
+          <td>{{schoolingRegistration.lastName}}</td>
+          <td>{{format-date schoolingRegistration.birthdate}}</td>
+          <td>{{schoolingRegistration.division}}</td>
+          <td><LinkTo @route="authenticated.organizations.get" @model={{schoolingRegistration.organizationId}}>{{schoolingRegistration.organizationId}}</LinkTo></td>
+          <td>{{schoolingRegistration.organizationExternalId}}</td>
+          <td title="{{schoolingRegistration.organizationName}}">{{schoolingRegistration.organizationName}}</td>
+          <td>{{format-date schoolingRegistration.createdAt}}</td>
+          <td>{{format-date schoolingRegistration.updatedAt}}</td>
+        </tr>
+      {{else}}
+        <tr>
+          <td colspan="9" class="table-admin-empty">Aucun résultat</td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<ConfirmPopup @message="Êtes-vous sûr de vouloir anonymiser cet utilisateur ? Ceci n’est pas réversible."
+              @confirm={{this.anonymizeUser}}
+              @cancel={{this.toggleDisplayConfirm}}
+              @show={{this.displayConfirm}} />

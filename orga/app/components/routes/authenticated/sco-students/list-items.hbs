@@ -1,0 +1,123 @@
+<div class="list-students-page__header">
+  <div class="page__title page-title">Élèves</div>
+  {{#if this.currentUser.isAdminInOrganization}}
+    <div class="list-students-page__import-students-button">
+      {{#if this.displayLearnMoreAndLinkTemplate }}
+        <PixTooltip
+          @text={{this.textTooltipForAgri}}
+          @position='bottom'
+          @class="pix-orga-tooltip list-students-page__tooltip">
+            <span class="list-students-page__tooltip-title">
+              <span>En savoir plus</span>
+              <FaIcon @icon="info-circle" class="info-icon"/>
+            </span>
+        </PixTooltip>
+        <a class="button button--link button--no-color"
+          href="{{this.urlToDownloadCsvTemplate}}" target="_blank" rel="noopener noreferrer" download>
+          Télécharger le modèle
+        </a>
+      {{/if}}
+      <FileUpload @name="file-upload" @for="students-file-upload" @accept={{this.acceptedFileType}} @multiple={{false}} @onfileadd={{@importStudents}}>
+        <span class="button" role="button" tabindex="0">Importer ({{join this.acceptedFileType ' ou '}})</span>
+      </FileUpload>
+    </div>
+  {{/if}}
+</div>
+
+<div class="panel">
+  <div class="table content-text content-text--small">
+    <table>
+      <thead>
+        <tr>
+          <Table::Header>Nom</Table::Header>
+          <Table::Header>Prénom</Table::Header>
+          <Table::Header>Date de naissance</Table::Header>
+          <Table::Header>Méthode(s) de connexion</Table::Header>
+          <Table::Header @size="small"/>
+        </tr>
+        <tr>
+          <Table::HeaderFilterInput
+            @field="lastName"
+            @value={{@lastNameFilter}}
+            @placeholder="Rechercher par nom"
+            @triggerFiltering={{@triggerFiltering}}
+          />
+          <Table::HeaderFilterInput
+            @field="firstName"
+            @value={{@firstNameFilter}}
+            @placeholder="Rechercher par prénom"
+            @triggerFiltering={{@triggerFiltering}}
+          />
+          <Table::Header/>
+          <Table::HeaderFilterSelect
+            @field="connexionType"
+            @options={{@connexionTypesOptions}}
+            @selectedOption={{@connexionTypeFilter}}
+            @triggerFiltering={{@triggerFiltering}}
+            @emptyOptionLabel="Tous"
+          />
+          <Table::Header/>
+        </tr>
+      </thead>
+
+      {{#if @students}}
+        <tbody>
+        {{#each @students as |student|}}
+          <tr aria-label="Élève">
+            <td>{{student.lastName}}</td>
+            <td>{{student.firstName}}</td>
+            <td>{{moment-format student.birthdate 'DD/MM/YYYY' allow-empty=true}}</td>
+            <td class="list-students-page__authentication-methods">{{student.authenticationMethods}}</td>
+            <td class="list-students-page__actions">
+              {{#if student.isStudentAssociated}}
+                <Dropdown::IconTrigger
+                  @icon="ellipsis-v"
+                  @dropdownButtonClass="list-students-page__dropdown-button"
+                  @dropdownContentClass="list-students-page__dropdown-content"
+                >
+                  <Dropdown::Item @onClick={{fn this.openAuthenticationMethodModal student}}>
+                    Gérer le compte
+                  </Dropdown::Item>
+                  {{#if this.currentUser.isAdminInOrganization}}
+                    {{#if this.isDissociateButtonEnabled}}
+                    <Dropdown::Item @onClick={{fn this.openDissociateModal student}}>
+                      Dissocier le compte
+                    </Dropdown::Item>
+                    {{/if}}
+                  {{/if}}
+                </Dropdown::IconTrigger>
+              {{/if}}
+            </td>
+          </tr>
+        {{/each}}
+
+        </tbody>
+      {{/if}}
+    </table>
+
+    {{#unless @students}}
+      <div class="table__empty content-text">Aucun élève.</div>
+    {{/unless}}
+  </div>
+
+  <ManageAuthenticationMethodModal
+    @organizationId={{this.currentUser.organization.id}}
+    @student={{this.student}}
+    @display={{this.isShowingAuthenticationMethodModal}}
+    @close={{this.closeAuthenticationMethodModal}}
+  />
+  <DissociateUserModal
+    @student={{this.student}}
+    @display={{this.isShowingDissociateModal}}
+    @close={{this.closeDissociateModal}}
+    @refreshModel={{@refreshModel}}
+  />
+</div>
+
+{{#if @isLoading}}
+  <ModalDialog @translucentOverlay={{true}} @containerClass="modal__translucent">
+    <PixLoader />
+  </ModalDialog>
+{{/if}}
+
+<PaginationControl @pagination={{@students.meta}}/>

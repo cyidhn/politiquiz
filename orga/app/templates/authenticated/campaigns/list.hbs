@@ -1,0 +1,20 @@
+<div class="list-campaigns-page">
+  {{#if this.displayNoCampaignPanel}}
+    <Routes::Authenticated::Campaign::NoCampaignPanel />
+  {{else}}
+    <div class="list-campaigns-page__header-page">
+      <button role="tab" type="submit" class="list-campaigns-page__tab {{unless this.isArchived  'list-campaigns-page__tab--active' }}" aria-selected="{{ not this.isArchived }}" aria-label="Afficher les campagnes actives" {{on 'click' (fn this.updateCampaignStatus null)}}>Actives</button>
+      <button role="tab" type="submit" class="list-campaigns-page__tab {{if this.isArchived 'list-campaigns-page__tab--active' }}" aria-selected="{{ this.isArchived }}" aria-label="Afficher les campagnes archivées" {{on 'click' (fn this.updateCampaignStatus 'archived')}}>Archivées</button>
+      <div role="tabpanel" class="list-campaigns-page__create-campaign-button">
+        <LinkTo @route="authenticated.campaigns.new" class="button button--link">Créer une campagne</LinkTo>
+      </div>
+    </div>
+    <Routes::Authenticated::Campaign::List
+      @campaigns={{@model}}
+      @nameFilter={{this.name}}
+      @creatorNameFilter={{this.creatorName}}
+      @triggerFiltering={{this.triggerFiltering}}
+      @goToCampaignPage={{this.goToCampaignPage}}
+    />
+  {{/if}}
+</div>

@@ -1,0 +1,11 @@
+{
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+        "./admin",
+        "./certif",
+        "./mon-pix",
+        "./api",
+        "./orga"
+    ],
+    "javascript.implicitProjectConfig.experimentalDecorators": true
+}

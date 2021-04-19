@@ -1,0 +1,31 @@
+<div class="challenge-embed-simulator" style="{{this.embedDocumentHeightStyle}}">
+  {{#if this.isLoadingEmbed}}
+    <div class="embed placeholder blurred" aria-label="{{t "pages.challenge.embed-simulator.placeholder"}}">
+      <FaIcon @icon="image"></FaIcon>
+    </div>
+  {{/if}}
+
+  <div class="embed rounded-panel {{if this.isLoadingEmbed 'hidden-visibility' ''}}">
+    {{#unless this.isSimulatorLaunched}}
+      <div class="embed__acknowledgment-overlay">
+        <button class="embed__launch-simulator-button" type="button" {{on 'click' this.launchSimulator}}>{{t "pages.challenge.embed-simulator.actions.launch"}}</button>
+      </div>
+    {{/unless}}
+
+    <div class="embed__simulator {{unless this.isSimulatorLaunched 'blurred'}}">
+      <iframe class="embed__iframe"
+              src="{{@embedDocument.url}}"
+              title="{{@embedDocument.title}}"
+        {{did-insert this.configureIframe @embedDocument.url this}}
+        {{did-update this.configureIframe @embedDocument.url this}}
+       />
+    </div>
+
+    <div class="embed__reboot">
+      <div class="link link--grey embed-reboot__content" role="button" {{on 'click' this.rebootSimulator}}>
+        <FaIcon @icon="redo-alt" class="embed-reboot-content__icon"></FaIcon>
+        <div class="embed-reboot-content__text">{{t "pages.challenge.embed-simulator.actions.reset"}} </div>
+      </div>
+    </div>
+  </div>
+</div>

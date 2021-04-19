@@ -1,0 +1,83 @@
+.panel {
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(12, 22, 58, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.navbar {
+  height: 60px;
+  border: none;
+  padding: 0 10px;
+
+  &-item {
+    width: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    color: $grey-35;
+    font-family: $roboto;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all ease-in-out 0.2s;
+    text-decoration: none;
+
+    &:hover {
+      color: $communication-dark;
+    }
+  }
+
+  &-item.active {
+    border-bottom: 2px solid $communication-dark;
+    color: $communication-dark;
+  }
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 140px;
+  background-color: $grey-80;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: $roboto;
+  font-size: 0.8125rem;
+
+  &::after {
+    content: "";
+    border-width: 5px;
+    border-style: solid;
+    border-color: $grey-80 transparent transparent transparent;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  &:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__text {
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+
+    &::after {
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+    }
+  }
+}

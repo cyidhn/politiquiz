@@ -1,0 +1,209 @@
+.add-issue-report-modal {
+  min-width: 650px;
+  max-width: 650px;
+
+  &__title {
+    font-family: $open-sans;
+    padding: 12px 32px;
+
+    h1 {
+      font-size: 1.25rem;
+      color: $grey-80;
+      margin: 0;
+      margin-bottom: 4px;
+    }
+
+    h3 {
+      font-size: 0.875rem;
+      color: $grey-50;
+      margin: 0;
+    }
+  }
+
+  &__content {
+    font-size: 0.875rem;
+    color: $grey-70;
+    border-top: 1px solid $grey-20;
+    border-bottom: 1px solid $grey-20;
+    padding: 22px 32px;
+    background-color: $grey-10;
+
+    h2 {
+      font-size: 0.875rem;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        padding-bottom: 18px;
+      }
+    }
+
+    &--frame {
+      max-height: 50vh;
+      overflow-y: scroll;
+
+      background-color: $white;
+      border: 1px solid $grey-22;
+      border-radius: 4px;
+      padding: 24px;
+
+      .add-issue-report-modal-content__category-label {
+        font-family: $roboto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        line-height: 32px;
+
+        svg {
+          font-size: 20px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .add-issue-report-modal-content__subcategory-label {
+        font-family: $roboto;
+        color: $grey-50;
+        padding: 0 0 0 16px;
+        margin: 8px 0 0 0;
+      }
+
+      button {
+        font-weight: 500;
+        svg {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .add-issue-report-modal-content {
+      label[for^="subcategory-for-category"],
+      label[for^="text-area-for-category"] {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .pix-select {
+        height: 35px;
+        background: $white;
+        border: 1.2px solid $grey-45;
+        border-radius: 4px;
+
+        select[id^="subcategory-for-category"] {
+          font-size: 14px;
+          color: $grey-90;
+        }
+
+        svg {
+          width: 14px;
+          height: 16px;
+          color: $blue-zodia;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: 0px;
+        }
+      }
+
+      label[for^="text-area-for-category"] {
+        margin-top: 16px;
+      }
+
+      fieldset {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        min-width: 0;
+        margin-bottom: 22px;
+
+        label[for^="input-radio-for-category"] {
+          span {
+            font-weight: bold;
+          }
+        }
+
+        input[id|="input-radio-for-category"] {
+          background-color: $communication-light;
+          transform: scale(1.2);
+          margin: 0;
+          cursor: pointer;
+          span {
+            font-weight: bold;
+          }
+        }
+
+        input[id|="input-for-category-in-challenge-question-number"] {
+          box-sizing: border-box;
+          margin-left: 8px;
+          border: 1.2px solid $blue-zodia;
+          border-radius: 4px;
+          padding:2px  8px;
+
+          &:focus {
+            outline: 2px solid $communication-dark;
+            -moz-outline-radius: 4px;
+            border: none;
+          }
+        }
+
+        label[for|="input-radio-for-category"] {
+          margin-left: 16px;
+          cursor: pointer;
+        }
+
+        label[for|="subcategory-for-category-in-challenge"] {
+          margin: 16px 0 8px;
+        }
+      }
+
+      div[class$="certification-issue-report-fields__details"] {
+        margin-top: 16px;
+        padding-left: 32px;
+
+        textarea {
+          box-sizing: border-box;
+          border: 1.2px solid $blue-zodia;
+          border-radius: 4px;
+          min-height: 82px;
+          padding: 8px;
+
+          &:focus {
+            outline: 2px solid $communication-dark;
+            -moz-outline-radius: 4px;
+            border: none;
+          }
+        }
+
+        p[class$="certification-issue-report-fields-details__char-count"] {
+          margin-top: 6px;
+          font-size: 12px;
+          display: flex;
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  &__actions {
+    background-color: $grey-10;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0 5px 5px;
+
+    .button--showed-as-link {
+      font-family: $roboto;
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 0.875rem;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}

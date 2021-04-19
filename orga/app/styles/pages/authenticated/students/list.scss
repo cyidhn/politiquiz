@@ -1,0 +1,65 @@
+$margin-right: 32px;
+
+.list-students-page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 1em;
+  }
+
+  &__tooltip {
+    display: inline-block;
+    color: $grey-40;
+
+    .pix-tooltip ul {
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      padding-inline-start: 40px;
+    }
+
+    .pix-tooltip li {
+      list-style: disc;
+      padding: initial;
+    }
+  }
+
+  &__tooltip-title {
+    font-size: 0.75rem;
+    svg {
+      margin-left: 4px;
+    }
+  }
+
+  &__import-students-button {
+    > * {
+      margin-right: 10px;
+    }
+    > *:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__authentication-methods {
+    white-space: pre;
+  }
+
+  &__actions {
+    text-align: right;
+  }
+
+  &__dropdown-button {
+    font-size: 1.1rem;
+    margin-right: $margin-right;
+  }
+
+  &__dropdown-content {
+    width: 200px;
+    right: $margin-right;
+  }
+}

@@ -1,0 +1,55 @@
+<form>
+  <div class="join-restricted-campaign__row">
+    <label class="join-restricted-campaign__label">{{t 'pages.join.sup.fields.student-number.label'}}</label>
+    <Input
+            @id="studentNumber"
+            @type="text"
+            @name="studentNumber"
+            @value={{this.studentNumber}}
+            placeholder={{t 'pages.join.sup.fields.student-number.label'}}
+            @disabled={{this.showFurtherInformationForm}}
+            @readonly={{this.showFurtherInformationForm}}
+            class={{if this.validation.studentNumber "input--error"}}
+            @focusOut={{fn this.triggerInputStringValidation "studentNumber" this.studentNumber}}
+    />
+    <div class={{if this.validation.studentNumber "join-restricted-campaign__field-error"}} role="alert">
+      {{this.validation.studentNumber}}
+    </div>
+    {{#if this.showFurtherInformationForm}}
+      <button type="button" class="link join-restricted-campaign__back-button" {{on 'click' this.hideFurtherInformationForm}}>
+        {{t 'pages.join.sup.fields.student-number.modify'}}
+      </button>
+    {{/if}}
+
+    <label for="no-student-number">
+      <Input @type="checkbox" @id="no-student-number" class="join-restricted-campaign__no-student-number" @checked={{this.noStudentNumber}} {{on 'click' this.toggleNoStudentNumber}}/>
+      {{t 'pages.join.sup.fields.student-number.not-existing'}}
+    </label>
+  </div>
+
+  {{#if this.showFurtherInformationForm}}
+    <Routes::Campaigns::Restricted::UserInformationForm
+            @validation={{this.validation}}
+            @firstName={{this.firstName}}
+            @lastName={{this.lastName}}
+            @dayOfBirth={{this.dayOfBirth}}
+            @monthOfBirth={{this.monthOfBirth}}
+            @yearOfBirth={{this.yearOfBirth}}
+            @triggerInputStringValidation={{this.triggerInputStringValidation}}
+            @triggerInputDayValidation={{this.triggerInputDayValidation}}
+            @triggerInputMonthValidation={{this.triggerInputMonthValidation}}
+            @triggerInputYearValidation={{this.triggerInputYearValidation}}
+    />
+  {{/if}}
+  {{#if this.errorMessage}}
+    <div class="join-restricted-campaign__error" aria-live="polite">{{{this.errorMessage}}}</div>
+  {{/if}}
+  <button type="submit" disabled={{this.isLoading}} class="button button--big join-restricted-campaign__button" {{on 'click' this.submit}}>
+    {{#if this.isLoading}}
+      <span class="loader-in-button">&nbsp;</span>
+    {{else}}
+      {{t 'pages.join.button'}}
+    {{/if}}
+  </button>
+
+</form>

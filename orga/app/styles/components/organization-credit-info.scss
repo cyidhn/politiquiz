@@ -1,0 +1,16 @@
+.organization-credit-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	span {
+		font-size: 0.875rem;
+		font-weight: 500;
+		color: $grey-90;
+	}
+
+	.info-icon {
+		color: $grey-40;
+		margin: 0 8px;
+	}
+}

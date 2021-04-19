@@ -1,0 +1,44 @@
+<div class="app">
+
+  <aside class="app__sidebar sidebar">
+    <header class="sidebar__logo">
+      <img class="sidebar__logo-image" src="{{this.rootUrl}}/pix-certif-logo.svg" alt="PixCertif">
+    </header>
+
+    <div class="sidebar__documentation">
+      <a class="sidebar-documentation__button" href="{{this.documentationLink}}" target="_blank" rel="noopener noreferrer">
+      <div class="sidebar-documentation__bar"></div>
+        <FaIcon @icon='book' @class="sidebar-documentation__icon"></FaIcon>
+                Documentation
+      </a>
+    </div>
+  </aside>
+
+  <div class="app__main-content main-content">
+
+    <div class="main-content__topbar topbar">
+      <div class="topbar__user-logged-menu"><UserLoggedMenu /></div>
+    </div>
+
+    {{#if this.showBanner}}
+      <PixBanner class="sco-temporary-banner">
+        <span class="sco-temporary-banner__informations-text">
+          <FaIcon @icon="exclamation-triangle" class="sco-temporary-banner-informations-text__triangle-icon" />
+          <p>
+            Il est important de vérifier que les élèves sont certifiables avant de les inscrire en session de certification. <br>
+            Vous pouvez faire une <a href="https://view.genial.ly/5fda0b5aebe82c0d17f177ea " target="_blank" rel="noopener noreferrer">campagne de collecte de profil <FaIcon @icon="external-link-alt"/></a> pour vous en assurer.
+          </p>
+        </span>
+        <button type="button" class="sco-temporary-banner-button" {{on 'click' this.closeBanner}}>
+          <FaIcon @icon="times" class="sco-temporary-banner-button__times-icon" />
+        </button>
+      </PixBanner>
+    {{/if}}
+
+    <div class="main-content__body page">
+      {{outlet}}
+    </div>
+
+  </div>
+
+</div>

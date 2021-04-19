@@ -1,0 +1,41 @@
+{{!-- template-lint-disable no-implicit-this no-action no-curly-component-invocation --}}
+{{#if currentUser.user}}
+  <button class="logged-user-name logged-user-name__link"
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="{{_canDisplayMenu}}"
+          {{action 'toggleUserMenu'}}>
+      {{currentUser.user.firstName}}
+      <span class="sr-only">{{t 'navigation.user-logged-menu.details'}}</span>
+      <span class="caret"></span>
+  </button>
+
+  {{#if _canDisplayMenu}}
+    <ClickOutside @action={{action "closeMenu"}}>
+      <div class="logged-user-menu">
+        <div class="logged-user-menu__details">
+          <div class="logged-user-menu-details__fullname">{{currentUser.user.fullName}}</div>
+          <div class="logged-user-menu-details__identifier">{{displayedIdentifier}}</div>
+        </div>
+        <ul class="logged-user-menu__actions">
+          <li hidden>
+            <LinkTo @route="user-account" data-test-account-link class="logged-user-menu__link" >
+              {{t 'navigation.user.account'}}
+            </LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="user-certifications" data-test-certifications-link class="logged-user-menu__link">
+              {{t 'navigation.user.certifications'}}
+            </LinkTo>
+          </li>
+          <li>
+            <LinkTo @route="logout" class="logged-user-menu__link">
+              <FaIcon @icon="power-off" class="logged-user-menu__icon"/>
+              {{t 'navigation.user.sign-out'}}
+            </LinkTo>
+          </li>
+        </ul>
+      </div>
+    </ClickOutside>
+  {{/if}}
+{{/if}}

@@ -1,0 +1,10 @@
+<nav class="navbar-header">
+  {{#if @campaignParticipations}}
+    <ResumeCampaignBanner  @campaignParticipations={{@campaignParticipations}}/>
+  {{/if}}
+  {{#if (media 'isDesktop')}}
+    <NavbarDesktopHeader @shouldShowTheMarianneLogo={{this.isFrenchDomainExtension}}/>
+  {{else}}
+    <NavbarMobileHeader @burger={{@burger}} @shouldShowTheMarianneLogo={{this.isFrenchDomainExtension}} />
+  {{/if}}
+</nav>

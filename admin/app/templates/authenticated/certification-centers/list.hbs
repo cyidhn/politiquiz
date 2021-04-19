@@ -1,0 +1,20 @@
+<header class="page-header">
+  <div class="page-title">Tous les centres de certification</div>
+  <div class="page-actions">
+    <LinkTo @route="authenticated.certification-centers.new" class="btn btn-outline-default btn-thin">
+      <FaIcon @icon="plus"></FaIcon>&nbsp;Nouveau centre de certif
+    </LinkTo>
+  </div>
+</header>
+
+<main class="page-body">
+  <section class="page-section">
+    <CertificationCenters::ListItems
+      @certificationCenters={{@model}}
+      @id={{this.id}}
+      @name={{this.name}}
+      @type={{this.type}}
+      @externalId={{this.externalId}}
+      @triggerFiltering={{this.triggerFiltering}} />
+  </section>
+</main>

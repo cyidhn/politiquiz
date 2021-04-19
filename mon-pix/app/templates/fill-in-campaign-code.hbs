@@ -1,0 +1,58 @@
+{{!-- template-lint-disable no-action  --}}
+{{page-title (t 'pages.fill-in-campaign-code.title')}}
+<BurgerMenu @animation="push" @translucentOverlay={{true}} as |burger|>
+  <burger.outlet>
+    <NavbarHeader @burger={{burger}} />
+
+    <div class="background-banner-wrapper">
+      <div class="background-banner"></div>
+
+      <main
+        class="fill-in-campaign-code__container rounded-panel rounded-panel--strong rounded-panel--over-background-banner">
+        <h1 class="fill-in-campaign-code__title rounded-panel-title">
+          {{this.firstTitle}}
+        </h1>
+
+        <label for="campaign-code"
+          class="fill-in-campaign-code__instruction">{{{t 'pages.fill-in-campaign-code.description'}}}</label>
+        <form class="fill-in-campaign-code__form" autocomplete="off">
+
+          <div class="fill-in-campaign-code__form-field">
+            <Input required
+              @id="campaign-code"
+              class="input-code"
+              @type="text"
+              @value={{this.campaignCode}}
+              @maxlength="9"
+              @key-down={{this.clearErrorMessage}} />
+          </div>
+
+          {{#if this.errorMessage}}
+          <div class="fill-in-campaign-code__error" aria-live="polite">
+            {{this.errorMessage}}
+          </div>
+          {{/if}}
+
+          <div class="fill-in-campaign-code__actions">
+            <PixButton
+              @type="submit"
+              class="button button--extra-big fill-in-campaign-code__start-button"
+              @triggerAction={{action 'startCampaign'}}
+              @loading-color="white">
+              {{t 'pages.fill-in-campaign-code.start'}}
+            </PixButton>
+          </div>
+        </form>
+
+        {{#if this.isUserAuthenticated}}
+          <div class="fill-in-campaign-code__warning">
+            <span>{{this.warningMessage}}</span>&nbsp;<span class="link" {{action this.disconnect}}>{{t 'pages.fill-in-campaign-code.warning-message-logout'}}</span>
+          </div>
+        {{/if}}
+      </main>
+    </div>
+
+    <Footer />
+
+  </burger.outlet>
+</BurgerMenu>

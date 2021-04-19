@@ -1,0 +1,24 @@
+{{#if this.shouldDisplayPrescriptionScoStudentRegistrationFeature}}
+  {{#unless this.hasOneOrMoreCandidates}}
+    <CertificationCandidatesSco @sessionId={{this.currentSession.id}}></CertificationCandidatesSco>
+  {{/unless}}
+  {{#if this.hasOneOrMoreCandidates}}
+  <EnrolledCandidates
+        @shouldDisplayPrescriptionScoStudentRegistrationFeature={{this.shouldDisplayPrescriptionScoStudentRegistrationFeature}}
+        @sessionId={{this.currentSession.id}}
+        @certificationCandidates={{this.certificationCandidates}}
+        @reloadCertificationCandidate={{this.reloadCertificationCandidateInController}} />
+  {{/if}}
+{{else}}
+  <ImportCandidates
+          @session={{this.currentSession}}
+          @certificationCandidates={{this.certificationCandidates}}
+          @isReportsCategorizationFeatureToggleEnabled={{this.isReportsCategorizationFeatureToggleEnabled}}
+          @reloadCertificationCandidate={{this.reloadCertificationCandidateInController}}
+          @importAllowed={{this.importAllowed}}/>
+  <EnrolledCandidates
+          @shouldDisplayPrescriptionScoStudentRegistrationFeature={{this.shouldDisplayPrescriptionScoStudentRegistrationFeature}}
+          @sessionId={{this.currentSession.id}}
+          @certificationCandidates={{this.certificationCandidates}}
+          @reloadCertificationCandidate={{this.reloadCertificationCandidateInController}} />
+{{/if}}

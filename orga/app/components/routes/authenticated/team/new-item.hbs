@@ -1,0 +1,26 @@
+<form {{on 'submit' @createOrganizationInvitation}} class="form">
+
+  <div class="form__field">
+    <label for="email" class="label">Adresse(s) e-mail</label>
+    <Input
+      @type="email"
+      @id="email"
+      @name="email"
+      @class="input"
+      @value={{@organizationInvitation.email}}
+      @multiple={{true}}
+      @aria-required="true"
+      @required="required"
+    />
+  </div>
+
+  <div class="form__validation">
+    <button type="button" class="button button--no-color" {{on 'click' @cancel}}>Annuler</button>
+    {{#if @isLoading}}
+      <button type="button" disabled class="button button--regular"><span class="loader-in-button">&nbsp;</span></button>
+    {{else}}
+      <button type="submit" class="button button--regular">Inviter</button>
+    {{/if}}
+  </div>
+
+</form>
