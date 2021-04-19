@@ -32,3 +32,4 @@ psql -h localhost -p 5432 -U postgres -W
 \c pix
 \dt
 INSERT INTO users_pix_roles(user_id, pix_role_id) VALUES (10000000, 1);
+test;
