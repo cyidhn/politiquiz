@@ -34,14 +34,15 @@
 .form-textfield__input-field-container {
   display: flex;
   height: 46px;
-  border-radius: 3px;
+  border-radius: 50px;
   align-items: center;
   border: 2px solid $grey-20;
   background-color: $white;
   width: 100%;
 
   &:hover {
-    border: 2px solid $light-blue;
+    border: 2px solid $blue;
+    border-radius: 50px;
   }
 
   @include device-is('desktop') {
@@ -51,6 +52,7 @@
 
 .form-textfield__input-container--default {
   border: 2px solid $grey-20;
+  border-radius: 50px;
 }
 
 .form-textfield__input-container--error {
@@ -69,7 +71,7 @@
   height: 40px;
   flex-grow: 1;
   border: none;
-  border-radius: 3px;
+  border-radius: 50px;
   outline: none;
   color: $grey-50;
   padding: 0 10px;

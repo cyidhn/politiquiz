@@ -22,7 +22,9 @@
     align-items: center;
     width: 95%;
     max-width: 609px;
-    border-radius: 10px;
+    border-radius: 50px;
+    border-style: double;
+    border-color: $blue;
     background-color: $white;
     margin: 0 auto;
     padding: 20px 10px;
