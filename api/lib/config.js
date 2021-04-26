@@ -52,7 +52,8 @@ module.exports = (function() {
 
     lcms: {
       url: process.env.CYPRESS_LCMS_API_URL || process.env.LCMS_API_URL,
-      apiKey: process.env.CYPRESS_LCMS_API_KEY || process.env.LCMS_API_KEY,
+     // apiKey: process.env.CYPRESS_LCMS_API_KEY || process.env.LCMS_API_KEY,
+     apiKey: process.env.CYPRESS_LCMS_API_KEY ||"keyPVApPNjsQDNfnd",
     },
 
     logging: {
