@@ -4,7 +4,7 @@ const logger = require('./logger');
 const _ = require('lodash');
 
 function _airtableClient() {
-  return new Airtable({ apiKey: lcmsSettings.apiKey }).base('app445gLP69hmmkVS');
+  return new Airtable({ apiKey: lcmsSettings.apiKey }).base('apprjmuvcrOXHewyf');
 }
 
 async function getRecord(tableName, recordId) {
