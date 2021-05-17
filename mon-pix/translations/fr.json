@@ -659,6 +659,9 @@
                 "subtitle": "Demande de réinitialisation de mot de passe"
             }
         },
+        "Classment": {
+            "title": "Classement"
+        },
         "profile": {
             "title": "Votre profil",
             "accessibility": {

@@ -659,6 +659,9 @@
                 "subtitle": "Password reset request"
             }
         },
+        "Classment": {
+            "title":"Classment"
+        },
         "profile": {
             "title": "Your profile",
             "accessibility": {

@@ -20,7 +20,6 @@ export default class Router extends EmberRouter {
 
 /* eslint-disable max-statements */
 Router.map(function() {
-
   this.route('index', { path: '/' });
   this.route('inscription');
   this.route('profile', { path: '/profil' });
@@ -29,6 +28,7 @@ Router.map(function() {
   this.route('user-account', { path: '/mon-compte' });
   this.route('user-tutorials', { path: '/mes-tutos' });
   this.route('user-dashboard', { path: '/accueil' });
+  this.route('classment', { path: '/classment' });
 
   this.route('assessments', { path: '/assessments/:assessment_id' }, function() {
     this.route('resume');
@@ -88,4 +88,5 @@ Router.map(function() {
 
   // XXX: this route is used for any request that did not match any of the previous routes. SHOULD ALWAYS BE THE LAST ONE
   this.route('not-found', { path: '/*path' });
+  this.route('classment');
 });
