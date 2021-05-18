@@ -659,7 +659,7 @@
                 "subtitle": "Password reset request"
             }
         },
-        "Classment": {
+        "classment": {
             "title":"Classment"
         },
         "profile": {
@@ -1011,7 +1011,8 @@
             "link-help": "https://pix.org/en-gb/faq-pix",
             "profile": "Profile",
             "start-certification": "Certification",
-            "tutorials": "My tutorials"
+            "tutorials": "My tutorials",
+            "classment": "Classement"
         },
         "not-logged": {
             "sign-in": "Log in",

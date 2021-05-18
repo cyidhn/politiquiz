@@ -659,7 +659,7 @@
                 "subtitle": "Demande de réinitialisation de mot de passe"
             }
         },
-        "Classment": {
+        "classment": {
             "title": "Classement"
         },
         "profile": {
@@ -1011,7 +1011,8 @@
             "link-help": "https://pix.fr/aide",
             "profile": "Profil",
             "start-certification": "Certification",
-            "tutorials":  "Mes tutos"
+            "tutorials":  "Mes tutos",
+            "classment": "Classement"
         },
         "not-logged": {
             "sign-in": "Se connecter",

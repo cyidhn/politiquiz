@@ -1,2 +1,11 @@
-coucou
-{{outlet}}
+{{page-title (t 'pages.classment.title')}}
+<BurgerMenu @animation="push" @translucentOverlay={{true}} as |burger|>
+  <burger.outlet>
+
+    <NavbarHeader @burger={{burger}} @campaignParticipations={{@model.campaignParticipations}}/>
+
+    
+
+    <Footer />
+  </burger.outlet>
+</BurgerMenu>
