@@ -1,0 +1,34 @@
+.titre
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.classement
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.ligne
+{
+    display: flex;
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #F9B233;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ligne:nth-child(even){
+    border-color: #0C4D6D;
+}
+.span
+{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
