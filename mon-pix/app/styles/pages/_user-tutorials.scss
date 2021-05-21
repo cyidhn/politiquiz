@@ -18,6 +18,7 @@
 
   &__icon {
     display: none;
+    height: 200px;
 
     @include device-is('tablet') {
       position: absolute;
