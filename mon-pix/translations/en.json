@@ -660,7 +660,8 @@
             }
         },
         "classment": {
-            "title":"Classment"
+            "title":"Classment",
+            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
         },
         "profile": {
             "title": "Your profile",
