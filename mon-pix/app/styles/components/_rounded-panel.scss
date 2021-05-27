@@ -87,11 +87,31 @@
     flex-direction: column;
     align-items: center;
 
+
     @include device-is('tablet') {
       flex-direction: row;
       overflow: auto;
     }
   }
+
+  .rounded-panel-body__areas::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    overflow-y: hidden;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#0c4d6d),
+      to(#062737)
+    );
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+      inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+  }
+
 
   &__competence-card {
     margin: 12px 10px;
@@ -148,4 +168,8 @@
   &--all-small-caps {
     font-variant-caps: all-small-caps;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  overflow-y: hidden;
 }

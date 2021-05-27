@@ -72,18 +72,3 @@ $warning: #FFBE00;
 $box-shadow-competence-cards: 0 3px 4px 0 rgba(12, 22, 58, 0.1), 0 1px 3px 0 rgba($grey-200, 0.1);
 $box-shadow-competence-cards-hover: 0 7px 14px 0 rgba(12, 22, 58, 0.2), 0 3px 6px 0 rgba($grey-200, 0.2);
 
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 30px;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#0c4d6d),
-      to(#062737)
-    );
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
-      inset -2px -2px -2px rgba(0, 0, 0, 0.25);
-  }
