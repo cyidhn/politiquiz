@@ -663,6 +663,9 @@
             "title": "Classement",
             "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
         },
+        "credit": {
+            "title": "Crédit"
+        },
         "profile": {
             "title": "Votre profil",
             "accessibility": {
@@ -1013,7 +1016,8 @@
             "profile": "Profil",
             "start-certification": "Certification",
             "tutorials":  "Mes tutos",
-            "classment": "Classement"
+            "classment": "Classement",
+            "credit": "Crédit"
         },
         "not-logged": {
             "sign-in": "Se connecter",

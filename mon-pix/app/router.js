@@ -29,6 +29,7 @@ Router.map(function() {
   this.route('user-tutorials', { path: '/mes-tutos' });
   this.route('user-dashboard', { path: '/accueil' });
   this.route('classment', { path: '/classment' });
+  this.route('credit', { path: '/credit' });
 
   this.route('assessments', { path: '/assessments/:assessment_id' }, function() {
     this.route('resume');
