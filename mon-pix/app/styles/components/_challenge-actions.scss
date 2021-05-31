@@ -84,7 +84,7 @@
   width: 150px;
   height: 46px;
   border-radius: 23px;
-  background-color: $green;
+  background-color: $light-blue;
   color: $white;
   display: flex;
   align-items: center;
@@ -98,7 +98,7 @@
   &:active,
   &:visited,
   &:focus {
-    background: $green-hover;
+    background: $pure-orange;
     text-decoration: none;
   }
 }

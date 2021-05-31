@@ -659,6 +659,13 @@
                 "subtitle": "Password reset request"
             }
         },
+        "classment": {
+            "title":"Classment",
+            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
+        },
+        "credit": {
+            "title": "Credit"
+        },
         "profile": {
             "title": "Your profile",
             "accessibility": {
@@ -1008,7 +1015,9 @@
             "link-help": "https://pix.org/en-gb/faq-pix",
             "profile": "Profile",
             "start-certification": "Certification",
-            "tutorials": "My tutorials"
+            "tutorials": "My tutorials",
+            "classment": "Classement",
+            "credit": "Crédit"
         },
         "not-logged": {
             "sign-in": "Log in",

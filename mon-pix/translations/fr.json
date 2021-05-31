@@ -4,7 +4,7 @@
         "bad-request-error": "Les données que vous avez soumises ne sont pas au bon format.",
         "internal-server-error": "Une erreur interne est survenue, nos équipes sont en train de résoudre le problème. Veuillez réessayer ultérieurement.",
         "join-error": {
-            "r11": "Vous possédez déjà un compte Pix avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R11)",
+            "r11": "Vous possédez déjà un compte Politiquiz avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R11)",
             "r12": "Vous possédez déjà un compte Pix utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R12)",
             "r13": "Vous possédez déjà un compte Pix via l’ENT dans un autre établissement scolaire.'<br><br>'Pour continuer, contactez un enseignant qui pourra vous donner l’accès à ce compte à l’aide de Pix Orga.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R13)",
             "r31": "Vous possédez déjà un compte Pix avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R31)",
@@ -23,7 +23,7 @@
         }
     },
     "application": {
-        "description": "Databasco est une plateforme en ligne d'évaluation et de certification des compétences numériques des citoyens francophones (élèves, étudiant•e•s, décrocheur•se•s, demandeur•se•s d'emploi, sénior•e•s)"
+        "description": "Politiquiz est une plateforme en ligne d'évaluation et de certification des compétences numériques des citoyens francophones (élèves, étudiant•e•s, décrocheur•se•s, demandeur•se•s d'emploi, sénior•e•s)"
     },
     "common": {
         "actions": {
@@ -500,7 +500,7 @@
             "next-level-info": "{ remainingPixToNextLevel } pix avant le niveau { level }",
             "tutorials": {
                 "title": "Cultivez vos compétences",
-                "description": "Voici une sélection de tutos qui pourront vous aider à gagner des Pix."
+                "description": "Voici une sélection de tutos qui pourront vous aider à gagner des points."
             }
         },
         "dashboard": {
@@ -559,7 +559,7 @@
         },
         "learning-more": {
             "title": "Pour en apprendre davantage",
-            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de Databasco."
+            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de Politiquiz."
         },
         "levelup-notif": {
             "obtained-level": "Niveau { level } gagné !"
@@ -659,6 +659,13 @@
                 "subtitle": "Demande de réinitialisation de mot de passe"
             }
         },
+        "classment": {
+            "title": "Classement",
+            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
+        },
+        "credit": {
+            "title": "Crédit"
+        },
         "profile": {
             "title": "Votre profil",
             "accessibility": {
@@ -670,7 +677,7 @@
                 "congrats": "Bravo !",
                 "details": "détails"
             },
-            "first-title": "Vous avez quelques compétences à tester. '<br>'Bon courage !",
+            "first-title": "Testez vos connaissances en politique. '<br>'Bon courage !",
             "resume-campaign-banner": {
                 "accessibility": {
                     "resume": "Continuer votre parcours",
@@ -687,7 +694,7 @@
             },
             "total-score-helper": {
                 "title": "Pourquoi 1024 ?",
-                "explanation": "C’est le nombre maximum de points qu’on pourra atteindre lorsque tous les niveaux du référentiel de Databasco seront disponibles.'<br>'Aujourd’hui, '<span class=\"hexagon-score-information__text--strong\">'le maximum est de {maxReachablePixCount} points'</span>', correspondant au niveau {maxReachableLevel}."
+                "explanation": "C’est le nombre maximum de points qu’on pourra atteindre lorsque tous les niveaux du référentiel de Politiquiz seront disponibles.'<br>'Aujourd’hui, '<span class=\"hexagon-score-information__text--strong\">'le maximum est de {maxReachablePixCount} points'</span>', correspondant au niveau {maxReachableLevel}."
             }
         },
         "profile-already-shared": {
@@ -881,7 +888,7 @@
                 "page3": {
                     "title": "Un niveau de difficulté adapté",
                     "icon": "icn-algo.svg",
-                    "explanation": "En fonction de vos réponses,\nDatabasco adapte la difficulté des questions."
+                    "explanation": "En fonction de vos réponses,\nPolitiquiz adapte la difficulté des questions."
                 }
             },
             "pass": "Ignorer",
@@ -889,14 +896,14 @@
         },
         "tutorial-panel": {
             "title": "Pour réussir la prochaine fois",
-            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de Databasco."
+            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de Politiquiz."
         },
         "user-account": {
             "title": "Mon compte"
         },
         "user-tutorials": {
             "title": "Mes tutos",
-            "description": "Progresser grâce aux tutos suggérés par la communauté des utilisateurs de Databasco.",
+            "description": "Progresser grâce aux tutos suggérés par la communauté des utilisateurs de Politiquiz.",
             "empty-list-info": {
                 "description": {
                     "part1": "Au fil de vos tests, des tutos vous sont recommandés : cliquez sur l'icône marque page",
@@ -942,14 +949,14 @@
             "warning-message-logout": "Se déconnecter"
         },
         "fill-in-certificate-verification-code": {
-            "title": "Vérifier un certificat Databasco",
-            "first-title": "Vérifier un certificat Databasco",
-            "description": "La certification Databasco atteste d’un niveau de maitrise des compétences numériques, reconnu par l’État et le monde professionnel.",
+            "title": "Vérifier un certificat Politiquiz",
+            "first-title": "Vérifier un certificat Politiquiz",
+            "description": "La certification Politiquiz atteste d’un niveau de maitrise des compétences numériques, reconnu par l’État et le monde professionnel.",
             "label": "Code de vérification (P-XXXXXXXX)",
             "errors": {
                 "wrong-format": "Veuillez vérifier le format de votre code (P-XXXXXXX).",
                 "missing-code": "Merci de renseigner le code de vérification.",
-                "not-found": "Il n'y a pas de certificat Databasco correspondant.",
+                "not-found": "Il n'y a pas de certificat Politiquiz correspondant.",
                 "unallowed-access": "Merci de renseigner le code de vérification au format P-XXXXXXXX dans le champ ci-dessus."
             },
             "verify": "Vérifier le certificat"
@@ -1008,13 +1015,15 @@
             "link-help": "https://pix.fr/aide",
             "profile": "Profil",
             "start-certification": "Certification",
-            "tutorials":  "Mes tutos"
+            "tutorials":  "Mes tutos",
+            "classment": "Classement",
+            "credit": "Crédit"
         },
         "not-logged": {
             "sign-in": "Se connecter",
             "sign-up": "S'inscrire"
         },
-        "pix": "Databasco",
+        "pix": "Politiquiz",
         "user-logged-menu": {
             "details": "Consulter mes informations"
         },

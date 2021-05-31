@@ -6,12 +6,12 @@
   text-align: center;
   border-radius: 5px;
   background-color: $blue;
-  color: $white;
+  color: black;
   cursor: pointer;
   border: none;
-  outline: none;
   transition: background-color 0.2s ease;
   padding: 5px 5px;
+  box-shadow: 0 3px 4px 0 rgb(12 22 58 / 10%), 0 1px 3px 0 rgb(7 20 46 / 10%);
 
   &:hover,
   &:active,
@@ -76,13 +76,16 @@
   }
 
   &--green {
-    background: $green;
+    background: $grey-22;
+    border-style: solid;
+    border-color: $grey-40;
     color: white;
 
     &:hover,
     &:active,
     &:focus {
-      background-color: $green-hover;
+      background-color: $green-gradient;
+      border: none;
     }
   }
 
@@ -98,8 +101,8 @@
   }
 
   &--yellow {
-    background: $yellow;
-    color: $grey-100;
+    background: $light-blue;
+    color: black;
     font-weight: $font-bold;
     font-size: 0.906rem;
     box-shadow: 0 2px 6px 0 rgba(12, 22, 58, 0.11), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
@@ -107,8 +110,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: $warning;
-      color: $grey-100;
+      background-color: $pure-orange;
+      color: black;
     }
   }
 

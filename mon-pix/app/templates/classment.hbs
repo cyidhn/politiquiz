@@ -1,0 +1,56 @@
+{{page-title (t 'pages.classment.title')}}
+<BurgerMenu @animation="push" @translucentOverlay={{true}} as |burger|>
+  <burger.outlet>
+
+    <NavbarHeader @burger={{burger}} @campaignParticipations={{@model.campaignParticipations}}/>
+    <div class="background-banner-wrapper">
+      <div class="background-banner">
+        <div class="user-tutorials-banner">
+          <img src="{{rootURL}}/images/user-tutorials/hexa-pix-blue.svg" class="user-tutorials-banner__icon" role="none" alt=""/>
+          <h3 class="user-tutorials-banner__title"> Classement </h3>
+          <p class="user-tutorials-banner__description">
+          {{t 'pages.classment.description'}}
+        </p>
+        </div>
+      </div>
+    </div>
+    <h4 class="rank">Le classement sera bientôt disponible !</h4>
+      {{!-- <div>
+        <h4 class="rank"> Vous êtes _ du classement Politiquiz !</h4>
+      </div>
+      <div class="classement">
+        <div class="ligne">
+          <span class="span"> 1 </span>
+          <span class="span"> Score </span>
+        </div>
+        <div class="ligne">
+          <span class="span"> 2 </span>
+          <span class="span"> Score </span>
+        </div>
+        <div class="ligne">
+          <span class="span"> 3 </span>
+          <span class="span"> Score </span>
+        </div>
+        <div class="ligne">
+          <span class="span"> 4 </span>
+          <span class="span"> Score </span>
+        </div>
+        <div class="ligne">
+          <span class="span"> 5 </span>
+          <span class="span"> Score </span>
+        </div>
+        <div class="ligne">
+          <span class="span"> 6 </span>
+          <span class="span"> Score </span>
+        </div>
+        <div class="ligne">
+          <span class="span"> 7 </span>
+          <span class="span"> Score </span>
+        </div>
+      </div>  --}}
+
+      
+
+    <Footer />
+  </burger.outlet>
+</BurgerMenu>

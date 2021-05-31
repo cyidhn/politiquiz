@@ -2,6 +2,7 @@
   display: inline-block;
   position: relative;
   text-align: left;
+  margin-right: 30px;
 }
 
 .pix-logo__link {
@@ -16,8 +17,9 @@
 
 .pix-logo__image {
   height: 45px;
+  
 
   @include device-is('desktop') {
-    height: 54px;
+    height: 75px;
   }
 }

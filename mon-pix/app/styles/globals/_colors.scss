@@ -1,7 +1,7 @@
 // See https://zeroheight.com/8dd127da7/p/839645-couleurs/b/21317a
 
 // primary
-$blue: #f51717;
+$blue: #F9B233;
 $blue-zodiac: #505F79;
 $white: #FFFFFF;
 
@@ -17,11 +17,11 @@ $red: #D63F00;
 $red-hover: darken($red, 4%);
 $yellow: #FFBE00;
 $yellow-hover: darken($yellow, 8%);
-$light-blue: #f51717;
-$pure-orange: #F45C00;
+$light-blue: #F9B233;
+$pure-orange: #F97E33;
 
 // gradients
-$default-gradient: linear-gradient(135deg, #f51717 0%, #F45C00 100%);
+$default-gradient: linear-gradient(180deg, #0C4D6D 0%, #062737 100%);
 $green-gradient: linear-gradient(0deg, #f51717 0%, #F45C00 100%);
 $pix-orga-old-gradient: linear-gradient(0deg, #f51717 0%, #F45C00 100%);
 $yellow-gradient: linear-gradient(180deg, #f51717 0%, #F45C00 100%);
@@ -54,12 +54,12 @@ $environment-dark: #5E2563;
 $environment-light: #564DA6;
 $communication-dark: #3D68FF;
 $communication-light: #12A3FF;
-$content-dark: #1A8C89;
-$content-light: #52D987;
-$information-dark: #F24645;
-$information-light: #F1A141;
-$security-dark: #AC008D;
-$security-light: #FF3F94;
+$content-dark: #791a8c;
+$content-light: #c52ce4;
+$information-dark: #F97E33;
+$information-light: #F9B233;
+$security-dark: #d61900;
+$security-light: #f96133;
 
 // status
 $error: #FF4B00;
@@ -71,3 +71,4 @@ $warning: #FFBE00;
 // box shadows
 $box-shadow-competence-cards: 0 3px 4px 0 rgba(12, 22, 58, 0.1), 0 1px 3px 0 rgba($grey-200, 0.1);
 $box-shadow-competence-cards-hover: 0 7px 14px 0 rgba(12, 22, 58, 0.2), 0 3px 6px 0 rgba($grey-200, 0.2);
+

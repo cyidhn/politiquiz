@@ -29,7 +29,7 @@ export default class ProgressBar extends Component {
   get steps() {
     const steps = [];
 
-    const gradient = colorGradient('#388AFF', '#985FFF', this.maxStepsNumber);
+    const gradient = colorGradient('#F9B233', '#F97E33', this.maxStepsNumber);
 
     for (let i = 0; i < this.maxStepsNumber; i++) {
       steps.push({
