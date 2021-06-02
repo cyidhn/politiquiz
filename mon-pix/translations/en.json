@@ -659,8 +659,8 @@
                 "subtitle": "Password reset request"
             }
         },
-        "classment": {
-            "title":"Classment",
+        "classement": {
+            "title":"Classement",
             "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
         },
         "credit": {
@@ -1016,7 +1016,7 @@
             "profile": "Profile",
             "start-certification": "Certification",
             "tutorials": "My tutorials",
-            "classment": "Classement",
+            "classement": "Classement",
             "credit": "Crédit"
         },
         "not-logged": {

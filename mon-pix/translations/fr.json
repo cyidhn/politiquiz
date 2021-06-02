@@ -659,7 +659,7 @@
                 "subtitle": "Demande de réinitialisation de mot de passe"
             }
         },
-        "classment": {
+        "classement": {
             "title": "Classement",
             "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
         },
@@ -1016,7 +1016,7 @@
             "profile": "Profil",
             "start-certification": "Certification",
             "tutorials":  "Mes tutos",
-            "classment": "Classement",
+            "classement": "Classement",
             "credit": "A propos"
         },
         "not-logged": {

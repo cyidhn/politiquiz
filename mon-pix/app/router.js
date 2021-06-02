@@ -28,7 +28,7 @@ Router.map(function() {
   this.route('user-account', { path: '/mon-compte' });
   this.route('user-tutorials', { path: '/mes-tutos' });
   this.route('user-dashboard', { path: '/accueil' });
-  this.route('classment', { path: '/classment' });
+  this.route('classement', { path: '/classement' });
   this.route('credit', { path: '/credit' });
 
   this.route('assessments', { path: '/assessments/:assessment_id' }, function() {
