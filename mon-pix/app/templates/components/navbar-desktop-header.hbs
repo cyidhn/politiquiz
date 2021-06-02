@@ -6,11 +6,6 @@
       <div class="navbar-desktop-header-logo__pix">
         <PixLogo />
       </div>
-      {{#if @shouldShowTheMarianneLogo}}
-        <div class="navbar-desktop-header-logo__marianne">
-          <img src="{{rootURL}}/images/logo-de-la-republique-francaise.svg" alt="{{t 'common.french-republic'}}">
-        </div>
-      {{/if}}
     </div>
 
     {{#unless this.isInRouteWithoutLinksInHeader}}
