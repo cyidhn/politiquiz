@@ -9,10 +9,6 @@
       </p>
     </div>
   {{/if}}
-  <LinkTo @route="user-certifications" class="navbar-burger-menu-user-info__item">
-    {{t 'navigation.user.certifications'}}
-  </LinkTo>
-
   <LinkTo @route="logout" class="navbar-burger-menu-user-info__item navbar-burger-menu-user-info-item__logout">
     {{t 'navigation.user.sign-out'}}
   </LinkTo>
@@ -38,16 +34,6 @@
     </LinkTo>
     <LinkTo @route="credit" class="navbar-burger-menu-navigation__item">
       {{t 'navigation.main.credit'}}
-    </LinkTo>
-
-    <a href="{{t 'navigation.main.link-help'}}" target="_blank" class="navbar-burger-menu-navigation__item">
-       {{t 'navigation.main.help'}}
-    </a>
-
-  </div>
-  <div class="navbar-burger-menu-navigation__item  navbar-burger-menu-navigation__bottom-item">
-   <LinkTo @route="fill-in-campaign-code" class="button button--thin">
-       {{t 'navigation.main.code'}}
     </LinkTo>
   </div>
 {{/unless}}

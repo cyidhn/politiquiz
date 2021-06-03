@@ -661,10 +661,11 @@
         },
         "classement": {
             "title": "Classement",
-            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
+            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz."
         },
         "credit": {
-            "title": "A propos"
+            "title": "A propos",
+            "description": "Politiquiz, la plateforme pour tester vos connaissances en politique."
         },
         "profile": {
             "title": "Votre profil",
