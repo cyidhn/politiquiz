@@ -45,7 +45,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-      API_HOST: process.env.API_HOST || '',
+      API_HOST: process.env.API_HOST || 'https://api.politiquiz.fr',
       isChallengeTimerEnable: true,
       MESSAGE_DISPLAY_DURATION: 1500,
       isMobileSimulationEnabled: false,
