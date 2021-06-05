@@ -125,8 +125,8 @@ module.exports = (function() {
     },
 
     features: {
-      dayBeforeImproving: _getNumber(process.env.DAY_BEFORE_IMPROVING, 2),
-      dayBeforeCompetenceResetV2: _getNumber(process.env.DAY_BEFORE_COMPETENCE_RESET_V2, 3),
+      dayBeforeImproving: _getNumber(process.env.DAY_BEFORE_IMPROVING, 1),
+      dayBeforeCompetenceResetV2: _getNumber(process.env.DAY_BEFORE_COMPETENCE_RESET_V2, 2),
       garAccessV2: isFeatureEnabled(process.env.GAR_ACCESS_V2),
       maxReachableLevel: _getNumber(process.env.MAX_REACHABLE_LEVEL, 5),
       newYearSchoolingRegistrationsImportDate: _getDate(process.env.NEW_YEAR_SCHOOLING_REGISTRATIONS_IMPORT_DATE),
