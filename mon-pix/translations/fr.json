@@ -4,26 +4,26 @@
         "bad-request-error": "Les données que vous avez soumises ne sont pas au bon format.",
         "internal-server-error": "Une erreur interne est survenue, nos équipes sont en train de résoudre le problème. Veuillez réessayer ultérieurement.",
         "join-error": {
-            "r11": "Vous possédez déjà un compte Politiquiz avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R11)",
-            "r12": "Vous possédez déjà un compte Pix utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R12)",
-            "r13": "Vous possédez déjà un compte Pix via l’ENT dans un autre établissement scolaire.'<br><br>'Pour continuer, contactez un enseignant qui pourra vous donner l’accès à ce compte à l’aide de Pix Orga.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R13)",
-            "r31": "Vous possédez déjà un compte Pix avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R31)",
-            "r32": "Vous possédez déjà un compte Pix utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R32)",
-            "r33": "Vous possédez déjà un compte Pix via l’ENT. Utilisez-le pour rejoindre le parcours.",
+            "r11": "Vous possédez déjà un compte PolitiQuiz avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R11)",
+            "r12": "Vous possédez déjà un compte PolitiQuiz utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R12)",
+            "r13": "Vous possédez déjà un compte PolitiQuiz via l’ENT dans un autre établissement scolaire.'<br><br>'Pour continuer, contactez un enseignant qui pourra vous donner l’accès à ce compte à l’aide de Pix Orga.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R13)",
+            "r31": "Vous possédez déjà un compte PolitiQuiz avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R31)",
+            "r32": "Vous possédez déjà un compte PolitiQuiz utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R32)",
+            "r33": "Vous possédez déjà un compte PolitiQuiz via l’ENT. Utilisez-le pour rejoindre le parcours.",
             "r70": "Une erreur est survenue. Déconnectez-vous et recommencez."
         },
         "login-unauthorized-error": "L'adresse e-mail ou l'identifiant et/ou le mot de passe saisis sont incorrects.",
         "register-error": {
-            "s51": "Vous possédez déjà un compte Pix avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R51)",
-            "s52": "Vous possédez déjà un compte Pix utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R52)",
-            "s53": "Vous possédez déjà un compte Pix via l’ENT.'<br>'Utilisez-le pour rejoindre le parcours.",
-            "s61": "Vous possédez déjà un compte Pix avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R61)",
-            "s62": "Vous possédez déjà un compte Pix utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R62)",
-            "s63": "Vous possédez déjà un compte Pix via l’ENT dans un autre établissement scolaire.'<br><br>'Pour continuer, contactez un enseignant qui pourra vous donner l’accès à ce compte à l’aide de Pix Orga.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R63)"
+            "s51": "Vous possédez déjà un compte PolitiQuiz avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R51)",
+            "s52": "Vous possédez déjà un compte PolitiQuiz utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R52)",
+            "s53": "Vous possédez déjà un compte PolitiQuiz via l’ENT.'<br>'Utilisez-le pour rejoindre le parcours.",
+            "s61": "Vous possédez déjà un compte PolitiQuiz avec l’adresse e-mail'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R61)",
+            "s62": "Vous possédez déjà un compte PolitiQuiz utilisé avec l’identifiant sous la forme prénom.nom suivi de 4 chiffres:'<br>'{ value }'<br><br>'Pour continuer, connectez-vous à ce compte ou demandez de l’aide à un enseignant.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R62)",
+            "s63": "Vous possédez déjà un compte PolitiQuiz via l’ENT dans un autre établissement scolaire.'<br><br>'Pour continuer, contactez un enseignant qui pourra vous donner l’accès à ce compte à l’aide de Pix Orga.'<br><br>'(Pour l’enseignant : voir le ’Kit de dépannage’ dans Pix Orga &gt; Documentation - Code R63)"
         }
     },
     "application": {
-        "description": "Politiquiz est une plateforme en ligne d'évaluation et de certification des compétences numériques des citoyens francophones (élèves, étudiant•e•s, décrocheur•se•s, demandeur•se•s d'emploi, sénior•e•s)"
+        "description": "PolitiQuiz est une plateforme en ligne de jeu politique."
     },
     "common": {
         "actions": {
@@ -57,7 +57,7 @@
         "assessment-results": {
             "title": "Fin du test",
             "actions": {
-                "continue-pix-experience": "Continuer mon expérience Pix",
+                "continue-pix-experience": "Continuer mon expérience PolitiQuiz",
                 "return-to-homepage": "Revenir à l'accueil"
             },
             "answers": {
@@ -83,7 +83,7 @@
                     "complement": "Le service public d’évaluation et de certification des compétences numériques Pix permet d’évaluer son niveau dans 5 grands domaines de compétences, qui couvrent l’ensemble des usages actuels du numérique.",
                     "list": "'<ul><li>'rechercher de l’information sur internet,'</li><li>'rédiger des documents,'</li><li>'communiquer et collaborer en ligne,'</li><li>'sécuriser son environnement de travail,'</li><li>'etc.'</li></ul>'",
                     "more-info": {
-                        "link": "https://pix.fr/competences",
+                        "link": "http://politiquiz.fr/competences",
                         "label": "En savoir plus."
                     }
                 },
@@ -93,14 +93,14 @@
                 },
                 "certify": {
                     "title": "Préparer une certification reconnue par l’État et le monde professionnel",
-                    "description": "La certification Pix permet de valoriser ses compétences numériques auprès des employeurs."
+                    "description": "La certification PolitiQuiz permet de valoriser ses compétences numériques auprès des employeurs."
                 }
             },
             "profiles-collection": {
                 "title": "Envoyez votre profil",
                 "action": "C'est parti !",
-                "announcement": "Inscrivez-vous ou connectez-vous sur la plateforme Pix et envoyez votre profil à l'organisation destinataire.",
-                "legal": "Les informations relatives à votre profil PIX seront transmises à l'organisateur pour lui permettre de vous accompagner. Elle ne seront transmises qu'avec votre consentement."
+                "announcement": "Inscrivez-vous ou connectez-vous sur la plateforme PolitiQuiz et envoyez votre profil à l'organisation destinataire.",
+                "legal": "Les informations relatives à votre profil PolitiQuiz seront transmises à l'organisateur pour lui permettre de vous accompagner. Elle ne seront transmises qu'avec votre consentement."
             }
         },
         "campaign-participation": {
@@ -116,7 +116,7 @@
             }
         },
         "certificate": {
-            "title": "Certificat Pix",
+            "title": "Certificat PolitiQuiz",
             "back-link": "Retour à mes certifications",
             "candidate-birth": "Né(e) le {birthdate}",
             "candidate-birth-complete": "Né(e) le {birthdate} à {birthplace}",
@@ -135,7 +135,7 @@
                 "alternative": "Certification cléA numérique"
             },
             "competences": {
-                "information": "Votre score certifié a été calculé en fonction de vos réponses lors du passage de la certification. Il peut donc différer du nombre de Pix affiché dans votre profil. Le jour de votre certification il était possible d’atteindre le niveau {maxReachableLevelOnCertificationDate} des compétences et {maxReachablePixCountOnCertificationDate} pix au maximum.",
+                "information": "Votre score certifié a été calculé en fonction de vos réponses lors du passage de la certification. Il peut donc différer du nombre de PolitiQuiz affiché dans votre profil. Le jour de votre certification il était possible d’atteindre le niveau {maxReachableLevelOnCertificationDate} des compétences et {maxReachablePixCountOnCertificationDate} pix au maximum.",
                 "subtitle": "(niveaux sur {maxReachableLevel})",
                 "title": "Compétences certifiées"
             },
@@ -152,9 +152,9 @@
             "title": "Résultats de votre compétence",
             "header": {
                 "congratulations": "Félicitations !",
-                "not-bad": "Pas mal, mais pas max !",
+                "not-bad": "Pas mal, mais vous pouvez faire mieux !",
                 "not-bad-subtitle": "Encore quelques petits efforts et vous décrocherez le premier niveau.",
-                "too-bad": "C'est dommage !",
+                "too-bad": "Dommage !",
                 "too-bad-subtitle": "Vous n'avez pas encore suffisement de connaissances, mais ça va venir !",
                 "you-have-earned": "Vous avez",
                 "you-have-reached-level": "Vous avez atteint"
@@ -214,10 +214,10 @@
             },
             "cgu": {
                 "contact": {
-                    "email": "dpo@pix.fr",
+                    "email": "contact@politiquiz.fr",
                     "info": "Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier en envoyant un mail à "
                 },
-                "info": "En cliquant sur \"Commencer mon test\", j’accepte que mes données d’identité, le numéro de certification et les circonstances de la passation telles que renseignées par le surveillant soient communiquées à Pix. Pix les utilisera lors de la délibération du jury pour produire et archiver mes résultats et pour éditer mon certificat. Si cette certification m’a été prescrite par une organisation, j’accepte que Pix lui communique mes résultats."
+                "info": "En cliquant sur \"Commencer mon test\", j’accepte que mes données d’identité, le numéro de certification et les circonstances de la passation telles que renseignées par le surveillant soient communiquées à PolitiQuiz. PolitiQuiz les utilisera lors de la délibération du jury pour produire et archiver mes résultats et pour éditer mon certificat. Si cette certification m’a été prescrite par une organisation, j’accepte que PolitiQuiz lui communique mes résultats."
             },
             "first-title": "Vous allez commencer votre test de certification"
         },
@@ -226,7 +226,7 @@
             "header": {
                 "certification-center": "centre de certification",
                 "date": "date",
-                "score": "score pix",
+                "score": "score PolitiQuiz",
                 "status": "statut"
             },
             "no-certification": {
@@ -277,7 +277,7 @@
                 "actions": {
                     "open-close": "Signaler un problème"
                 },
-                "description": "Pix est à l’écoute de vos remarques pour améliorer les épreuves proposées !*",
+                "description": "PolitiQuiz est à l’écoute de vos remarques pour améliorer les épreuves proposées !*",
                 "form": {
                     "actions": {
                         "submit": "Envoyer"
@@ -346,11 +346,11 @@
                             "empty-message": "Vous devez saisir un message.",
                             "max-characters": "Votre message est limité à 10 000 caractères."
                         },
-                        "success": "'<p>'Votre commentaire a bien été transmis à l’équipe du projet Pix.'</p><p>'Mercix !'</p>'"
+                        "success": "'<p>'Votre commentaire a bien été transmis à l’équipe du projet PolitiQuiz.'</p><p>'Mercix !'</p>'"
                     }
                 },
                 "information": {
-                    "data-usage": "'<p>'Pix traite les données de cette zone pour gérer et analyser la difficulté rencontrée et bénéficier de votre retour d'expérience. Vous disposez de droits sur vos données qui peuvent être exercés auprès de '<a href=\"mailto:dpo@pix.fr\" class=\"link\">'dpo@pix.fr'</a>'.'</p><p><a href=\"https://pix.fr/dp-formulaire-signalement-epreuve\" target=\"_blank\" class=\"link\">'Pour en savoir plus sur la protection de vos données et sur vos droits.'</a></p>'",
+                    "data-usage": "'<p>'PolitiQuiz traite les données de cette zone pour gérer et analyser la difficulté rencontrée et bénéficier de votre retour d'expérience. Vous disposez de droits sur vos données qui peuvent être exercés auprès de '<a href=\"mailto:contact@politiquiz.fr\" class=\"link\">'dpo@politiquiz.fr'</a>'.'</p><p><a href=\"https://pix.fr/dp-formulaire-signalement-epreuve\" target=\"_blank\" class=\"link\">'Pour en savoir plus sur la protection de vos données et sur vos droits.'</a></p>'",
                     "guidance": "'<p>'* Soyez attentifs à ce que vous écrivez dans cette zone : restez objectif et factuel pour votre intérêt et celui des autres.'</p><p>'Notamment, ne saisissez aucune information, vous concernant ou concernant des tiers, sur la santé, la religion, les opinions politiques, syndicales et philosophiques, les origines ethniques, ainsi que sur les sanctions et condamnations.'</p>'"
                 }
             },
@@ -379,7 +379,7 @@
                         "choose-type": "Choisissez le type de fichier que vous voulez utiliser",
                         "download": "Télécharger"
                     },
-                    "description": "Pix vous laisse le choix du format de fichier à télécharger. Si vous ne savez pas quelle option retenir, conservez le choix par défaut. Il correspond au format de fichier pris en charge par le plus grand nombre de logiciels.",
+                    "description": "PolitiQuiz vous laisse le choix du format de fichier à télécharger. Si vous ne savez pas quelle option retenir, conservez le choix par défaut. Il correspond au format de fichier pris en charge par le plus grand nombre de logiciels.",
                     "file-type": "fichier .{fileExtension}",
                     "help": "Besoin d'aide pour '<a href=\"https://support.pix.fr/fr/support/solutions/articles/15000036390\" class=\"challenge-statement__action-help--link\" target=\"_blank\">'ouvrir, modifier ou retrouver ce fichier'</a>' ?"
                 }
@@ -486,8 +486,8 @@
                     "description": "Remise à zéro disponible dans { daysBeforeReset, plural, =0 {0 jour.} =1 {1 jour.} other {# jours.} }",
                     "label": "Remettre à zéro",
                     "modal": {
-                        "important-message": "Vos { earnedPix } Pix vont être supprimés.",
-                        "important-message-above-level-one": "Votre niveau { level } et vos { earnedPix } Pix vont être supprimés.",
+                        "important-message": "Vos { earnedPix } points vont être supprimés.",
+                        "important-message-above-level-one": "Votre niveau { level } et vos { earnedPix } points vont être supprimés.",
                         "title": "Remise à zéro de la compétence",
                         "warning": "Attention : si vous avez un parcours d’évaluation en cours, certaines questions pourront vous être reposées."
                     }
@@ -497,7 +497,7 @@
                 }
             },
             "for-competence": "la compétence {competence}",
-            "next-level-info": "{ remainingPixToNextLevel } pix avant le niveau { level }",
+            "next-level-info": "{ remainingPixToNextLevel } points avant le niveau { level }",
             "tutorials": {
                 "title": "Cultivez vos compétences",
                 "description": "Voici une sélection de tutos qui pourront vous aider à gagner des points."
@@ -511,7 +511,7 @@
             }
         },
         "error": {
-            "content-text": "'<p>'Nous vous invitons à recharger cette page ou '<LinkTo @route=\"login\">'revenir à la page d’accueil'</LinkTo>'.'</p><p>'Vous pouvez aussi nous contacter via '<a href=\"https://support.pix.fr/support/tickets/new\">'le formulaire du centre d'aide'</a>' en nous précisant le code d’erreur ci-dessous dans la description.'</p><p>'Nous vous prions de nous excuser pour la gêne occasionnée.'</p><p>'L’équipe Pix.'</p>'",
+            "content-text": "'<p>'Nous vous invitons à recharger cette page ou '<LinkTo @route=\"login\">'revenir à la page d’accueil'</LinkTo>'.'</p><p>'Vous pouvez aussi nous contacter via '<a href=\"https://support.pix.fr/support/tickets/new\">'le formulaire du centre d'aide'</a>' en nous précisant le code d’erreur ci-dessous dans la description.'</p><p>'Nous vous prions de nous excuser pour la gêne occasionnée.'</p><p>'L’équipe PolitiQuiz.'</p>'",
             "first-title": "Oups, une erreur est survenue !"
         },
         "join": {
@@ -538,15 +538,15 @@
             },
             "first-title": "Rejoignez l'organisation { organizationName }",
             "sco": {
-                "continue-with-pix": "Continuer avec mon compte Pix",
+                "continue-with-pix": "Continuer avec mon compte PolitiQuiz",
                 "error-not-found": "Vous êtes un élève ? '<br>' Vérifiez vos informations (prénom, nom et date de naissance) ou contactez un enseignant.'<br><br>' Vous êtes un enseignant ? '<br>' L‘accès à un parcours n‘est pas disponible pour le moment.",
                 "login-information-title": "Information de connexion",
-                "login-information-message": "Le compte Pix '<b>'{ connectionMethod }'</b>' va être associé à l'élève: '<b>'{ firstName } { lastName }'</b>'.'<br><br>'S’il s’agit bien de vous, cliquez sur \"Associer\", sinon déconnectez-vous.",
+                "login-information-message": "Le compte PolitiQuiz '<b>'{ connectionMethod }'</b>' va être associé à l'élève: '<b>'{ firstName } { lastName }'</b>'.'<br><br>'S’il s’agit bien de vous, cliquez sur \"Associer\", sinon déconnectez-vous.",
                 "associate": "Associer"
             },
             "subtitle": "Remplissez les informations manquantes",
             "sup": {
-                "error": "Veuillez vérifier les informations saisies, ou si vous avez déjà un compte Pix, connectez-vous avec celui-ci.",
+                "error": "Veuillez vérifier les informations saisies, ou si vous avez déjà un compte PolitiQuiz, connectez-vous avec celui-ci.",
                 "fields": {
                     "student-number": {
                         "error": "Votre numéro étudiant n’est pas renseigné.",
@@ -559,14 +559,14 @@
         },
         "learning-more": {
             "title": "Pour en apprendre davantage",
-            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de Politiquiz."
+            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de PolitiQuiz."
         },
         "levelup-notif": {
             "obtained-level": "Niveau { level } gagné !"
         },
         "login-or-register": {
             "title": "",
-            "invitation": "{ organizationName } vous invite à rejoindre Pix",
+            "invitation": "{ organizationName } vous invite à rejoindre PolitiQuiz",
             "login-form": {
                 "button": "Se connecter",
                 "error": "L'adresse e-mail ou l'identifiant et/ou le mot de passe saisis sont incorrects",
@@ -580,11 +580,11 @@
                 },
                 "forgotten-password": {
                     "email": "Une Adresse e-mail :",
-                    "instruction": "Mot de passe oublié ? Vous avez un compte Pix avec :",
+                    "instruction": "Mot de passe oublié ? Vous avez un compte PolitiQuiz avec :",
                     "other-identity": "Un identifiant : Contactez votre enseignant pour le réinitialiser",
                     "reset-link": "Cliquez ici pour le réinitialiser"
                 },
-                "title": "J’ai déjà un compte Pix",
+                "title": "J’ai déjà un compte PolitiQuiz",
                 "unexpected-user-account-error": "L'adresse e-mail ou l'identifiant est incorrect. Pour continuer, vous devez vous connecter à votre compte qui est sous la forme : "
             },
             "register-form": {
@@ -597,7 +597,7 @@
                         "month-error": "Votre mois de naissance n’est pas valide.",
                         "year-error": "Votre année de naissance n’est pas valide."
                     },
-                    "cgu": "J’accepte les '<a href=\"https://pix.fr/conditions-generales-d-utilisation\" class=\"link\" target=\"_blank\" rel=\"noopener noreferrer\">'conditions d’utilisation de Pix'</a>'",
+                    "cgu": "J’accepte les '<a href=\"http://politiquiz.fr/cgu\" class=\"link\" target=\"_blank\" rel=\"noopener noreferrer\">'conditions d’utilisation de PolitiQuiz'</a>'",
                     "email": {
                         "error": "Votre email n’est pas valide.",
                         "help": "(ex: nom@exemple.fr)",
@@ -621,14 +621,14 @@
                         "label": "Mon identifiant"
                     }
                 },
-                "legal-text": "Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé par Pix pour permettre l’accès au service offert. Elles sont conservées pendant la durée d’utilisation du service et sont destinées à Pix. Les résultats des tests pourront être communiqués à des tiers, avec votre consentement, dans le cas où vous avez été invité à suivre un parcours spécifique. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier en contactant le Délégué à la Protection des Données de Pix à dpo@pix.fr.",
+                "legal-text": "Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé par PolitiQuiz pour permettre l’accès au service offert. Elles sont conservées pendant la durée d’utilisation du service et sont destinées à PolitiQuiz. Les résultats des tests pourront être communiqués à des tiers, avec votre consentement, dans le cas où vous avez été invité à suivre un parcours spécifique. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier en contactant le Délégué à la Protection des Données de PolitiQuiz à contact@politiquiz.fr.",
                 "not-me": "Ce n'est pas moi",
                 "options": {
                     "email": "Mon adresse e-mail",
                     "text": "Je m'inscris avec :",
                     "username": "Mon identifiant"
                 },
-                "title": "Je m’inscris sur Pix",
+                "title": "Je m’inscris sur PolitiQuiz",
                 "error": "Une erreur est survenue. Veuillez recommencer ou contacter le support."
             }
         },
@@ -652,7 +652,7 @@
                 "message": "Cette adresse e-mail ne correspond à aucun compte"
             },
             "page-title": "Oubli de mot de passe",
-            "subtitle": "Entrez votre adresse e-mail ci-dessous, et c'est repartix",
+            "subtitle": "Entrez votre adresse e-mail ci-dessous, et c'est repartis",
             "succeed": {
                 "help": "Si vous ne recevez pas cet e-mail, vérifiez vos courriers indésirables.",
                 "instructions": "Un e-mail contenant la démarche à suivre afin de réinitialiser votre mot de passe\n vous a été envoyé à l’adresse e-mail {email}.",
@@ -661,7 +661,7 @@
         },
         "classement": {
             "title": "Classement",
-            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz."
+            "description": "Vous trouverez ici votre classement face aux membres de la communauté PolitiQuiz."
         },
         "credit": {
             "title": "A propos",
@@ -695,7 +695,7 @@
             },
             "total-score-helper": {
                 "title": "Pourquoi 1024 ?",
-                "explanation": "C’est le nombre maximum de points qu’on pourra atteindre lorsque tous les niveaux du référentiel de Politiquiz seront disponibles.'<br>'Aujourd’hui, '<span class=\"hexagon-score-information__text--strong\">'le maximum est de {maxReachablePixCount} points'</span>', correspondant au niveau {maxReachableLevel}."
+                "explanation": "C’est le nombre maximum de points qu’on pourra atteindre lorsque tous les niveaux du référentiel de PolitiQuiz seront disponibles.'<br>'Aujourd’hui, '<span class=\"hexagon-score-information__text--strong\">'le maximum est de {maxReachablePixCount} points'</span>', correspondant au niveau {maxReachableLevel}."
             }
         },
         "profile-already-shared": {
@@ -814,7 +814,7 @@
             },
             "first-title": "Inscrivez-vous",
             "instructions": "Les champs marqués de '<abbr title=\"obligatoire\" class=\"mandatory-mark\">'*'</abbr>' sont obligatoires",
-            "legal-information": "Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé pour permettre l'accès au service offert par Pix. Elles sont conservées pendant une durée de 5 ans maximum à compter du dernier accès au compte utilisateur, et archivées selon les délais de prescription légale (5 ans). Elles sont destinées à Pix et à ses prestataires techniques exclusivement. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier en envoyant un mail à dpd@pix.fr.",
+            "legal-information": "Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé pour permettre l'accès au service offert par PolitiQuiz. Elles sont conservées pendant une durée de 5 ans maximum à compter du dernier accès au compte utilisateur, et archivées selon les délais de prescription légale (5 ans). Elles sont destinées à PolitiQuiz et à ses prestataires techniques exclusivement. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier en envoyant un mail à contact@politiquiz.fr.",
             "subtitle": {
                 "link": "connectez-vous à votre compte"
             }
@@ -856,7 +856,7 @@
         },
         "terms-of-service": {
             "title": "Conditions d'utilisation",
-            "cgu": "J'accepte les '<a href=\"https://pix.fr/conditions-generales-d-utilisation\" class=\"link\" target=\"_blank\">'conditions d'utilisation'</a>'",
+            "cgu": "J'accepte les '<a href=\"http://politiquiz.fr/cgu\" class=\"link\" target=\"_blank\">'conditions d'utilisation'</a>'",
             "message": "Nous avons mis à jour nos conditions d'utilisation. Veuillez les accepter afin de pouvoir continuer votre expérience.",
             "form": {
                 "button": "Je continue",
@@ -889,7 +889,7 @@
                 "page3": {
                     "title": "Un niveau de difficulté adapté",
                     "icon": "icn-algo.svg",
-                    "explanation": "En fonction de vos réponses,\nPolitiquiz adapte la difficulté des questions."
+                    "explanation": "En fonction de vos réponses,\nPolitiQuiz adapte la difficulté des questions."
                 }
             },
             "pass": "Ignorer",
@@ -897,14 +897,14 @@
         },
         "tutorial-panel": {
             "title": "Pour réussir la prochaine fois",
-            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de Politiquiz."
+            "info": "Ces liens vers les tutos ont été proposés par des utilisateurs de PolitiQuiz."
         },
         "user-account": {
             "title": "Mon compte"
         },
         "user-tutorials": {
             "title": "Mes tutos",
-            "description": "Progresser grâce aux tutos suggérés par la communauté des utilisateurs de Politiquiz.",
+            "description": "Progresser grâce aux tutos suggérés par la communauté des utilisateurs de PolitiQuiz.",
             "empty-list-info": {
                 "description": {
                     "part1": "Au fil de vos tests, des tutos vous sont recommandés : cliquez sur l'icône marque page",
@@ -950,14 +950,14 @@
             "warning-message-logout": "Se déconnecter"
         },
         "fill-in-certificate-verification-code": {
-            "title": "Vérifier un certificat Politiquiz",
-            "first-title": "Vérifier un certificat Politiquiz",
-            "description": "La certification Politiquiz atteste d’un niveau de maitrise des compétences numériques, reconnu par l’État et le monde professionnel.",
+            "title": "Vérifier un certificat PolitiQuiz",
+            "first-title": "Vérifier un certificat PolitiQuiz",
+            "description": "La certification PolitiQuiz atteste d’un niveau de maitrise des compétences numériques, reconnu par l’État et le monde professionnel.",
             "label": "Code de vérification (P-XXXXXXXX)",
             "errors": {
                 "wrong-format": "Veuillez vérifier le format de votre code (P-XXXXXXX).",
                 "missing-code": "Merci de renseigner le code de vérification.",
-                "not-found": "Il n'y a pas de certificat Politiquiz correspondant.",
+                "not-found": "Il n'y a pas de certificat PolitiQuiz correspondant.",
                 "unallowed-access": "Merci de renseigner le code de vérification au format P-XXXXXXXX dans le champ ci-dessus."
             },
             "verify": "Vérifier le certificat"
@@ -1006,25 +1006,25 @@
         "footer": {
             "a11y": "Accessibilité",
             "help-center": "Centre d'aide",
-            "link-a11y": "https://pix.fr/accessibilite",
-            "link-help-center": "https://pix.fr/aide"
+            "link-a11y": "https://politiquiz.fr/accessibilite",
+            "link-help-center": "http://politiquiz.fr/aide"
         },
         "main": {
             "code": "J'ai un code",
             "dashboard": "Accueil",
             "help": "Aide",
-            "link-help": "https://pix.fr/aide",
+            "link-help": "https://politiquiz.fr/aide",
             "profile": "Profil",
             "start-certification": "Certification",
             "tutorials":  "Mes tutos",
             "classement": "Classement",
-            "credit": "A propos"
+            "credit": "À propos"
         },
         "not-logged": {
             "sign-in": "Se connecter",
             "sign-up": "S'inscrire"
         },
-        "pix": "Politiquiz",
+        "pix": "PolitiQuiz",
         "user-logged-menu": {
             "details": "Consulter mes informations"
         },
