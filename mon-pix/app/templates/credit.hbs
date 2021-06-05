@@ -1,1 +1,31 @@
-{{outlet}}
+{{page-title (t 'pages.credit.title')}}
+<BurgerMenu @animation="push" @translucentOverlay={{true}} as |burger|>
+  <burger.outlet>
+
+    <NavbarHeader @burger={{burger}} @campaignParticipations={{@model.campaignParticipations}}/>
+    <div class="background-banner-wrapper">
+      <div class="background-banner">
+        <div class="user-tutorials-banner">
+          <img src="{{rootURL}}/images/user-tutorials/a-propos.svg" class="user-tutorials-banner__icon" role="none" alt=""/>
+          <h3 class="user-tutorials-banner__title">A propos </h3>
+          <p class="user-tutorials-banner__description">
+          {{t 'pages.credit.description'}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div  class="apropos">
+      <p>
+        L'application PolitiQuiz a été pensé et conçu par les membres du laboratoire IDHN, et plus spécifiquement par Julien Longhi et Jérémy Demange. L'application se base sur la code source de <a href="https://github.com/1024pix/pix" target="_blank">Pix</a>.<br/><br/>
+        PolitiQuiz a été développé avec l'aide de Lucas Malatchoumy, Raoul Velautham et Rym Baba Aissa.<br/><br/>
+        La laboratoire IDHN remercie la <b>région Île-De-France</b> et le <b>DIM Sciences du Texte et Connaissances Nouvelles</b> pour son soutien sur l'ensemble des projets menés au laboratoire.
+        <br/><br/><br/><br/><br/>
+      </p>
+    </div>
+
+
+      
+
+    <Footer />
+  </burger.outlet>
+</BurgerMenu>

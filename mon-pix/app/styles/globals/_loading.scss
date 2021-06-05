@@ -21,7 +21,12 @@
 .app-loader__image {
   text-align: center;
 }
-
+@media(max-width: 680px){
+  .app-loader__image{
+    height: auto;
+    width: auto;
+  }
+}
 .app-nested-loader {
   position: relative;
   padding: 40px;

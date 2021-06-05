@@ -45,8 +45,8 @@ module.exports = (function() {
     domain: {
       tldFr: process.env.TLD_FR || '.fr',
       tldOrg: process.env.TLD_ORG || '.org',
-      pix: process.env.DOMAIN_PIX || 'https://pix',
-      pixApp: process.env.DOMAIN_PIX_APP || 'https://app.pix',
+      pix: process.env.DOMAIN_PIX || 'https://politiquiz',
+      pixApp: process.env.DOMAIN_PIX_APP || 'https://app.politiquiz',
       pixOrga: process.env.DOMAIN_PIX_ORGA || 'https://orga.pix',
     },
 
@@ -125,8 +125,8 @@ module.exports = (function() {
     },
 
     features: {
-      dayBeforeImproving: _getNumber(process.env.DAY_BEFORE_IMPROVING, 4),
-      dayBeforeCompetenceResetV2: _getNumber(process.env.DAY_BEFORE_COMPETENCE_RESET_V2, 7),
+      dayBeforeImproving: _getNumber(process.env.DAY_BEFORE_IMPROVING, 1),
+      dayBeforeCompetenceResetV2: _getNumber(process.env.DAY_BEFORE_COMPETENCE_RESET_V2, 2),
       garAccessV2: isFeatureEnabled(process.env.GAR_ACCESS_V2),
       maxReachableLevel: _getNumber(process.env.MAX_REACHABLE_LEVEL, 5),
       newYearSchoolingRegistrationsImportDate: _getDate(process.env.NEW_YEAR_SCHOOLING_REGISTRATIONS_IMPORT_DATE),
@@ -171,7 +171,7 @@ module.exports = (function() {
 
     config.domain.tldFr = '.fr';
     config.domain.tldOrg = '.org';
-    config.domain.pix = 'https://pix';
+    config.domain.pix = 'https://politiquiz';
     config.domain.pixOrga = 'https://orga.pix';
 
     config.features.dayBeforeImproving = 4;

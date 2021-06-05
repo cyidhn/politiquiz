@@ -6,11 +6,6 @@
       <div class="navbar-desktop-header-logo__pix">
         <PixLogo />
       </div>
-      {{#if @shouldShowTheMarianneLogo}}
-        <div class="navbar-desktop-header-logo__marianne">
-          <img src="{{rootURL}}/images/logo-de-la-republique-francaise.svg" alt="{{t 'common.french-republic'}}">
-        </div>
-      {{/if}}
     </div>
 
     {{#unless this.isInRouteWithoutLinksInHeader}}
@@ -39,8 +34,8 @@
             </LinkTo>
           </li>
           <li class="navbar-desktop-header-menu__item">
-            <LinkTo @route="classment" class="navbar-desktop-header-menu__link">
-              {{t 'navigation.main.classment'}}
+            <LinkTo @route="classement" class="navbar-desktop-header-menu__link">
+              {{t 'navigation.main.classement'}}
             </LinkTo>
           </li>
           <li class="navbar-desktop-header-menu__item">

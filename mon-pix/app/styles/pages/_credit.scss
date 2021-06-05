@@ -1,0 +1,16 @@
+.apropos
+{
+display:flex;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-right: 258px;
+margin-left: 258px;
+}
+@media (max-width:981px){
+    .apropos {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

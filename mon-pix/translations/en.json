@@ -659,12 +659,13 @@
                 "subtitle": "Password reset request"
             }
         },
-        "classment": {
-            "title":"Classment",
-            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz"
+        "classement": {
+            "title":"Classement",
+            "description": "Vous trouverez ici votre classement face aux membres de la communauté Politiquiz."
         },
         "credit": {
-            "title": "Credit"
+            "title": "Credit",
+            "description": "Politiquiz, the platform to test your knowledge of politics."
         },
         "profile": {
             "title": "Your profile",
@@ -1016,7 +1017,7 @@
             "profile": "Profile",
             "start-certification": "Certification",
             "tutorials": "My tutorials",
-            "classment": "Classement",
+            "classement": "Classement",
             "credit": "Crédit"
         },
         "not-logged": {
