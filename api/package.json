@@ -73,7 +73,7 @@
     "sax": "^1.2.4",
     "saxpath": "^0.6.5",
     "sib-api-v3-sdk": "^7.2.4",
-    "xlsx": "^0.16.1",
+    "xlsx": "^0.17.0",
     "xml-buffer-tostring": "^0.2.0",
     "xml-crypto": "~1.0.2",
     "xml2js": "^0.4.23",
